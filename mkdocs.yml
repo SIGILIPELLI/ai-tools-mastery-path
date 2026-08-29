@@ -1,0 +1,100 @@
+site_name: AI Tools Mastery Path
+site_description: A structured, module-wise training program on evaluating and using AI tools effectively -- entry level to master level, for individuals and teams.
+site_url: https://sigilipelli.github.io/ai-tools-mastery-path/
+repo_url: https://github.com/SIGILIPELLI/ai-tools-mastery-path
+repo_name: ai-tools-mastery-path
+
+theme:
+  name: material
+  custom_dir: docs/overrides
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - content.code.copy
+    - content.code.annotate
+    - search.suggest
+    - search.highlight
+
+markdown_extensions:
+  - admonition
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - toc:
+      permalink: true
+
+extra_css:
+  - stylesheets/extra.css
+
+nav:
+  - Home: index.md
+  - Privacy Policy: privacy.md
+  - "Level 1 · Entry":
+      - Overview: level-1/index.md
+      - "01 · The Landscape of AI Tools": level-1/01-landscape-of-ai-tools.md
+      - "02 · Choosing the Right AI Tool for a Task": level-1/02-choosing-the-right-ai-tool.md
+      - "03 · AI Chat Assistants Overview": level-1/03-ai-chat-assistants-overview.md
+      - "04 · AI for Writing & Research Tasks": level-1/04-ai-for-writing-research.md
+      - "05 · AI for Coding Assistance": level-1/05-ai-for-coding-assistance.md
+      - "06 · AI Image & Media Generation Basics": level-1/06-ai-image-media-generation.md
+      - "07 · AI for Productivity & Automation": level-1/07-ai-for-productivity-automation.md
+      - "08 · Prompting Fundamentals That Work Across Tools": level-1/08-prompting-fundamentals.md
+      - "09 · Evaluating AI Output Critically": level-1/09-evaluating-ai-output-critically.md
+      - "10 · Project — Build a Personal AI Toolkit": level-1/10-project-personal-ai-toolkit.md
+  - "Level 2 · Intermediate":
+      - Overview: level-2/index.md
+      - "01 · Comparing AI Tools Systematically": level-2/01-comparing-ai-tools-systematically.md
+      - "02 · Combining Multiple AI Tools in a Workflow": level-2/02-combining-ai-tools-in-a-workflow.md
+      - "03 · AI-Assisted Research Workflows": level-2/03-ai-assisted-research-workflows.md
+      - "04 · AI-Assisted Content Creation Pipelines": level-2/04-ai-assisted-content-pipelines.md
+      - "05 · Automation Platforms & AI Integration": level-2/05-automation-platforms-ai-integration.md
+      - "06 · Data Privacy & Security When Using AI Tools": level-2/06-data-privacy-security.md
+      - "07 · Cost-Benefit Analysis of AI Tool Adoption": level-2/07-cost-benefit-analysis.md
+      - "08 · Building Personal AI-Assisted Routines": level-2/08-personal-ai-assisted-routines.md
+      - "09 · Common Pitfalls in AI Tool Adoption": level-2/09-common-pitfalls.md
+      - "10 · Project — Design an AI-Augmented Personal Workflow": level-2/10-project-ai-augmented-workflow.md
+  - "Level 3 · Advanced":
+      - Overview: level-3/index.md
+      - "01 · AI Tool Adoption for Teams": level-3/01-ai-tool-adoption-for-teams.md
+      - "02 · Building Internal AI Tool Guidelines": level-3/02-internal-ai-tool-guidelines.md
+      - "03 · Evaluating AI Vendors": level-3/03-evaluating-ai-vendors.md
+      - "04 · Integrating AI Tools into Existing Software Stacks": level-3/04-integrating-ai-tools-into-stacks.md
+      - "05 · Measuring ROI of AI Tool Adoption": level-3/05-measuring-roi.md
+      - "06 · Change Management for AI Tool Rollouts": level-3/06-change-management-rollouts.md
+      - "07 · Data Governance for AI Tool Usage": level-3/07-data-governance.md
+      - "08 · Training Teams to Use AI Tools Effectively": level-3/08-training-teams.md
+      - "09 · Staying Current in a Fast-Moving Landscape": level-3/09-staying-current.md
+      - "10 · Project — An AI Tool Adoption Proposal for a Team": level-3/10-project-adoption-proposal.md
+  - "Level 4 · Master":
+      - Overview: level-4/index.md
+      - "01 · Organizational AI Strategy": level-4/01-organizational-ai-strategy.md
+      - "02 · Building an AI Tools Governance Committee": level-4/02-ai-tools-governance-committee.md
+      - "03 · Advanced Vendor Risk Management for AI Tools": level-4/03-advanced-vendor-risk-management.md
+      - "04 · Scaling AI Tool Adoption Across an Organization": level-4/04-scaling-ai-tool-adoption.md
+      - "05 · Ethical & Responsible AI Tool Use at Scale": level-4/05-ethical-responsible-use-at-scale.md
+      - "06 · Measuring Organizational AI Maturity": level-4/06-measuring-organizational-ai-maturity.md
+      - "07 · Building an AI Center of Excellence": level-4/07-building-ai-center-of-excellence.md
+      - "08 · Future-Proofing an AI Tool Strategy": level-4/08-future-proofing-ai-tool-strategy.md
+      - "09 · Career Growth: AI Tools Strategist/Consultant": level-4/09-career-growth-ai-tools-strategist.md
+      - "10 · Capstone — Full Organizational AI Tools Strategy": level-4/10-capstone-organizational-ai-tools-strategy.md
