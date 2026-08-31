@@ -1,5 +1,77 @@
 # 09 · Common Pitfalls in AI Tool Adoption
 
-This module is part of Level 2 · Intermediate.
+This module consolidates the failure patterns from the rest of Level 2
+into one reference: the mistakes that show up again and again as
+individuals move from casual AI use to relying on it for real work.
 
-More lessons are on the way — check back soon.
+## 1. The core pitfall categories
+
+| Category | What it looks like |
+|---|---|
+| Over-trust | Accepting AI output without verification because it reads fluently |
+| Under-trust | Refusing to use AI for tasks it's genuinely good at, out of blanket skepticism |
+| Wrong tool fit | Using a general chat assistant for a task a specialized tool would do better, or vice versa |
+| Data exposure | Inputting sensitive or regulated data without checking the tool's data handling |
+| Process skipping | Using AI to shortcut a step (verification, review, structured comparison) that still needs doing |
+| Cost blindness | Not tracking whether the tool is actually paying for itself |
+
+## 2. A durable self-check table
+
+| Question | If the answer is concerning |
+|---|---|
+| Would I be comfortable if someone checked every claim in this output? | If not, verify before using it |
+| Have I checked this tool's data policy for the sensitivity of what I'm inputting? | If not, don't input it yet |
+| Am I using this tool because it's genuinely the best fit, or because it's the one I already have open? | Compare against alternatives for anything that matters |
+| Is there a review checkpoint before this reaches someone else? | If not, add one before it becomes a routine |
+| Do I actually know if this is saving me time net of verification? | If unmeasured, you don't actually know — measure it |
+
+## 3. Pitfall-to-module map
+
+| Pitfall | Where it's covered in depth |
+|---|---|
+| Ad-hoc, unreliable tool comparison | Module 1 — Comparing AI Tools Systematically |
+| Disconnected point-tool usage instead of a workflow | Module 2 — Combining Multiple AI Tools in a Workflow |
+| Fabricated facts/citations in research | Module 3 — AI-Assisted Research Workflows |
+| Generic, voiceless content output | Module 4 — AI-Assisted Content Creation Pipelines |
+| Unreviewed automated actions | Module 5 — Automation Platforms & AI Integration |
+| Sensitive data exposure | Module 6 — Data Privacy & Security |
+| Untracked or unjustified spend | Module 7 — Cost-Benefit Analysis |
+| Fragile, one-off routines | Module 8 — Building Personal AI-Assisted Routines |
+
+## 4. The meta-pitfall: treating AI tool skill as static
+
+| Symptom | Why it's a problem |
+|---|---|
+| Using the same prompting habits and tool choices for a year without revisiting them | Tools, capabilities, and your own task mix all change; last year's best practice may now be suboptimal |
+| Assuming a tool's data/pricing/capability terms haven't changed since you last checked | Vendors update these frequently, often without prominent notice |
+| Never re-running the comparison framework from Module 1 on tools you already use daily | A tool that won six months ago may have been overtaken |
+
+## 5. A quarterly self-audit checklist
+
+| Check | Frequency |
+|---|---|
+| Re-run cost-benefit analysis on tools you pay for | Quarterly |
+| Re-check data handling terms for tools you use with anything sensitive | Twice a year, or on any major terms update |
+| Re-compare your primary tool against current alternatives | Every 6 months |
+| Review whether your routines still have an active review checkpoint | Quarterly |
+| Sample recent AI-assisted output for quality drift | Monthly for high-frequency routines |
+
+## Worked example
+
+A freelance analyst realizes, prompted by this module's self-audit
+checklist, that she has been using the same AI writing tool for a year
+without re-checking its pricing (which increased twice) or comparing it
+against newer alternatives. She runs the Module 1 comparison framework
+again with her current task set and finds a competitor now matches her
+usual tool's quality at a lower price. She also discovers her weekly
+report routine (Module 8) had quietly lost its review checkpoint —
+she'd stopped reading drafts closely after a few months of good results
+— and catches a factual error in the most recent one as a direct result
+of restoring the check.
+
+## Exercise
+
+Go through the section 2 self-check table honestly against your actual
+current AI tool usage. For each question where the answer is concerning,
+write one concrete action you'll take this week to fix it, referencing
+the relevant module from section 3.
