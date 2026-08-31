@@ -998,6 +998,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03 · AI-Assisted Research Workflows
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1014,6 +1032,91 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-what-ai-is-good-and-bad-at-in-research" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. What AI is good and bad at in research
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-a-four-stage-research-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. A four-stage research workflow
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-the-verification-discipline" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. The verification discipline
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-common-failure-modes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Common failure modes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#worked-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Worked example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1991,6 +2094,80 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-what-ai-is-good-and-bad-at-in-research" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. What AI is good and bad at in research
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-a-four-stage-research-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. A four-stage research workflow
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-the-verification-discipline" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. The verification discipline
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-common-failure-modes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Common failure modes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#worked-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Worked example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2010,8 +2187,165 @@
 
 
 <h1 id="03-ai-assisted-research-workflows">03 · AI-Assisted Research Workflows<a class="headerlink" href="#03-ai-assisted-research-workflows" title="Permanent link">&para;</a></h1>
-<p>This module is part of Level 2 · Intermediate.</p>
-<p>More lessons are on the way — check back soon.</p>
+<p>Research is one of the highest-leverage uses of AI tools, and one of the
+easiest to get wrong. This module builds a repeatable workflow for using AI
+to accelerate research without letting it quietly corrupt your conclusions.</p>
+<h2 id="1-what-ai-is-good-and-bad-at-in-research">1. What AI is good and bad at in research<a class="headerlink" href="#1-what-ai-is-good-and-bad-at-in-research" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Task</th>
+<th>AI strength</th>
+<th>Risk</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Summarizing a long document you provide</td>
+<td>Strong — grounded in given text</td>
+<td>Can still drop caveats or nuance</td>
+</tr>
+<tr>
+<td>Explaining an unfamiliar concept</td>
+<td>Strong — good first pass</td>
+<td>May oversimplify or miss edge cases</td>
+</tr>
+<tr>
+<td>Finding facts, dates, statistics, citations</td>
+<td>Weak — prone to fabrication</td>
+<td>Confident-sounding wrong answers ("hallucination")</td>
+</tr>
+<tr>
+<td>Generating search queries and angles to explore</td>
+<td>Strong — good for breadth</td>
+<td>Won't know what's actually been published recently</td>
+</tr>
+<tr>
+<td>Synthesizing across multiple sources you supply</td>
+<td>Strong</td>
+<td>Quality caps at the quality of what you fed it</td>
+</tr>
+<tr>
+<td>Evaluating source credibility</td>
+<td>Weak on its own</td>
+<td>Needs your judgment, not the model's confidence</td>
+</tr>
+</tbody>
+</table>
+<p>The pattern: AI is a strong accelerant for working <em>with</em> text you supply or
+retrieve, and an unreliable oracle for facts it has to recall from memory.</p>
+<h2 id="2-a-four-stage-research-workflow">2. A four-stage research workflow<a class="headerlink" href="#2-a-four-stage-research-workflow" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Stage</th>
+<th>What you do</th>
+<th>AI's role</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. Scope</td>
+<td>Write one sentence: what question are you answering, and what would a good answer let you do next?</td>
+<td>Optional — ask AI to help sharpen a vague question into a specific one</td>
+</tr>
+<tr>
+<td>2. Gather</td>
+<td>Collect primary sources yourself (search engines, databases, docs) rather than asking AI to recall facts</td>
+<td>Generate search queries and angles; summarize sources you paste in</td>
+</tr>
+<tr>
+<td>3. Synthesize</td>
+<td>Feed AI the sources you gathered and ask for a structured synthesis, not new facts</td>
+<td>Compare, contrast, and organize — grounded in what you gave it</td>
+</tr>
+<tr>
+<td>4. Verify</td>
+<td>Spot-check every claim that would matter if wrong, against the original sources</td>
+<td>None — this step is yours by design</td>
+</tr>
+</tbody>
+</table>
+<h2 id="3-the-verification-discipline">3. The verification discipline<a class="headerlink" href="#3-the-verification-discipline" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Claim type</th>
+<th>Verification bar</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Numbers, dates, statistics</td>
+<td>Always trace to a primary source before using</td>
+</tr>
+<tr>
+<td>Named quotes or attributions</td>
+<td>Always verify the exact source — a common fabrication pattern</td>
+</tr>
+<tr>
+<td>General conceptual explanations</td>
+<td>Spot-check against one reputable source</td>
+</tr>
+<tr>
+<td>Your own synthesis of provided material</td>
+<td>Re-read the AI's summary against the source it was given</td>
+</tr>
+</tbody>
+</table>
+<p>A useful habit: ask the AI to cite <em>which of the sources you gave it</em>
+supports each claim in its synthesis. This doesn't stop fabrication of
+external facts, but it does make grounded claims traceable and exposes
+ungrounded ones — an answer with no traceable source in your material is a
+signal to verify manually.</p>
+<h2 id="4-common-failure-modes">4. Common failure modes<a class="headerlink" href="#4-common-failure-modes" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Failure</th>
+<th>Cause</th>
+<th>Fix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Hallucinated citations</td>
+<td>Model asked to recall specific sources from memory</td>
+<td>Never ask AI to produce citations it wasn't given; only cite what you supplied</td>
+</tr>
+<tr>
+<td>False confidence</td>
+<td>Fluent, well-structured prose reads as authoritative regardless of accuracy</td>
+<td>Treat fluency and accuracy as unrelated; verify independently of tone</td>
+</tr>
+<tr>
+<td>Source laundering</td>
+<td>AI summary loses the caveats/uncertainty in the original source</td>
+<td>Explicitly ask it to preserve stated uncertainty and limitations</td>
+</tr>
+<tr>
+<td>Search-then-stop</td>
+<td>Treating the first AI summary as the final answer</td>
+<td>Always compare against at least one independent source for anything consequential</td>
+</tr>
+</tbody>
+</table>
+<h2 id="worked-example">Worked example<a class="headerlink" href="#worked-example" title="Permanent link">&para;</a></h2>
+<p>A product manager needs to understand competitor pricing models before a
+planning meeting in two hours. Instead of asking an AI assistant "what do
+competitors charge," which risks fabricated numbers, she visits each
+competitor's actual pricing page, saves the text, and pastes all four into
+an AI tool asking it to synthesize a comparison table of tiers, limits, and
+price points — a task the AI is strong at because it's working from
+supplied text, not memory. She spot-checks the table against the original
+pages before the meeting and catches one row where the AI merged two
+tiers incorrectly.</p>
+<h2 id="exercise">Exercise<a class="headerlink" href="#exercise" title="Permanent link">&para;</a></h2>
+<p>Pick a question you genuinely need to answer. Run it through the four-stage
+workflow: write the one-sentence scope, gather three primary sources
+yourself, ask an AI tool to synthesize them into a structured summary, and
+verify the three most consequential claims against the original sources.
+Note any claim the AI made that wasn't traceable to what you gave it.</p>
 
 
 

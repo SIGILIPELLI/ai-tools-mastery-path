@@ -92,7 +92,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#02-combining-multiple-ai-tools-in-a-workflow" class="md-skip">
+        <a href="#02-combining-ai-tools-in-a-workflow" class="md-skip">
           Skip to content
         </a>
       
@@ -970,6 +970,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02 · Combining Multiple AI Tools in a Workflow
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -986,6 +1004,91 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-why-chaining-beats-single-tool-workflows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Why chaining beats single-tool workflows
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-a-framework-for-designing-a-chain" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. A framework for designing a chain
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-common-workflow-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Common workflow patterns
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-risks-specific-to-chains" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Risks specific to chains
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#worked-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Worked example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1991,6 +2094,80 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-why-chaining-beats-single-tool-workflows" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Why chaining beats single-tool workflows
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-a-framework-for-designing-a-chain" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. A framework for designing a chain
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-common-workflow-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Common workflow patterns
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-risks-specific-to-chains" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Risks specific to chains
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#worked-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Worked example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2009,9 +2186,127 @@
   
 
 
-<h1 id="02-combining-multiple-ai-tools-in-a-workflow">02 · Combining Multiple AI Tools in a Workflow<a class="headerlink" href="#02-combining-multiple-ai-tools-in-a-workflow" title="Permanent link">&para;</a></h1>
-<p>This module is part of Level 2 · Intermediate.</p>
-<p>More lessons are on the way — check back soon.</p>
+<h1 id="02-combining-ai-tools-in-a-workflow">02 · Combining AI Tools in a Workflow<a class="headerlink" href="#02-combining-ai-tools-in-a-workflow" title="Permanent link">&para;</a></h1>
+<p>No single AI tool is best at everything. The intermediate skill isn't
+picking one tool — it's chaining several into a workflow where each does
+the part it's actually strong at, with a human checking the seams.</p>
+<h2 id="1-why-chaining-beats-single-tool-workflows">1. Why chaining beats single-tool workflows<a class="headerlink" href="#1-why-chaining-beats-single-tool-workflows" title="Permanent link">&para;</a></h2>
+<p>A single tool used for an entire multi-step task inherits that tool's
+weakest capability across every step. Chaining lets you route each step to
+whichever tool handles it best, and it forces natural checkpoints between
+steps — which is also where verification happens.</p>
+<h2 id="2-a-framework-for-designing-a-chain">2. A framework for designing a chain<a class="headerlink" href="#2-a-framework-for-designing-a-chain" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>Question</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. Decompose the task</td>
+<td>What are the distinct sub-tasks, and what does each one actually require (research, drafting, structuring, visual output, code)?</td>
+</tr>
+<tr>
+<td>2. Match tool to sub-task</td>
+<td>Which tool category (Level 1, Module 2) is strongest for each sub-task specifically?</td>
+</tr>
+<tr>
+<td>3. Define the handoff format</td>
+<td>What exact output from step N does step N+1 need as input — plain text, structured data, an image file?</td>
+</tr>
+<tr>
+<td>4. Place verification checkpoints</td>
+<td>After which steps does a wrong output cause the most downstream damage if uncaught? Put a human check there.</td>
+</tr>
+<tr>
+<td>5. Decide what stays manual</td>
+<td>Some steps are faster or safer done by hand — don't force AI into every link in the chain</td>
+</tr>
+</tbody>
+</table>
+<h2 id="3-common-workflow-patterns">3. Common workflow patterns<a class="headerlink" href="#3-common-workflow-patterns" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Pattern</th>
+<th>Example chain</th>
+<th>Where it's used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Research → draft → polish</td>
+<td>Research assistant gathers sources → chat assistant drafts → same or different tool refines tone</td>
+<td>Content and writing work</td>
+</tr>
+<tr>
+<td>Draft → critique → revise</td>
+<td>One tool produces a draft, a second tool (or the same one in a fresh session) critiques it against a rubric</td>
+<td>Reducing sycophancy in self-review</td>
+</tr>
+<tr>
+<td>Generate → structure → automate</td>
+<td>Chat assistant generates content → structured into a spreadsheet/table → automation platform routes it</td>
+<td>Repeatable content or data pipelines</td>
+</tr>
+<tr>
+<td>Code → test → explain</td>
+<td>Coding assistant writes code → test runner/second tool checks it → assistant explains failures</td>
+<td>Software work (Level 1, Module 5)</td>
+</tr>
+</tbody>
+</table>
+<h2 id="4-risks-specific-to-chains">4. Risks specific to chains<a class="headerlink" href="#4-risks-specific-to-chains" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Risk</th>
+<th>What happens</th>
+<th>Mitigation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Error compounding</td>
+<td>A mistake in step 1 flows silently into every later step</td>
+<td>Verify outputs at defined checkpoints (section 2, step 4), not just at the end</td>
+</tr>
+<tr>
+<td>Format mismatches</td>
+<td>Step 2's tool can't parse what step 1 produced</td>
+<td>Specify the exact handoff format explicitly rather than assuming compatibility</td>
+</tr>
+<tr>
+<td>Loss of context</td>
+<td>Tool 2 doesn't know why Tool 1 made certain choices</td>
+<td>Carry forward a short rationale note, not just the raw output</td>
+</tr>
+<tr>
+<td>False efficiency</td>
+<td>The chain takes longer to babysit than doing the task manually would have</td>
+<td>Only chain tasks that are repeated often enough or complex enough to justify the setup cost</td>
+</tr>
+</tbody>
+</table>
+<h2 id="worked-example">Worked example<a class="headerlink" href="#worked-example" title="Permanent link">&para;</a></h2>
+<p>A small nonprofit needs a monthly donor newsletter. Instead of asking one
+chat assistant to do everything, the coordinator builds a chain: a research
+tool pulls a summary of the month's program updates from internal
+documents; a chat assistant drafts the newsletter copy from that summary;
+a human editor checks facts and tone (the checkpoint, placed here because a
+factual error in a donor communication is costly); an automation platform
+then formats the approved copy into the email template and schedules the
+send. Each tool does the part it's strongest at, and the one verification
+checkpoint sits exactly where an uncaught error would do the most damage.</p>
+<h2 id="exercise">Exercise<a class="headerlink" href="#exercise" title="Permanent link">&para;</a></h2>
+<p>Take a multi-step task you do regularly (a report, a content piece, a data
+summary). Decompose it into sub-tasks using section 2's framework, assign
+each sub-task to the tool category best suited for it, and specify the
+exact handoff format between each pair of steps. Mark the one checkpoint
+in the chain where a human must verify before continuing, and explain why
+you chose that point over any other.</p>
 
 
 

@@ -1718,6 +1718,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02 · Building an AI Tools Governance Committee
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1734,6 +1752,91 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-who-belongs-on-the-committee" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Who belongs on the committee
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-committee-operating-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Committee operating model
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-a-tiered-approval-framework" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. A tiered approval framework
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-common-governance-failure-modes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Common governance failure modes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#worked-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Worked example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1991,6 +2094,80 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-who-belongs-on-the-committee" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Who belongs on the committee
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-committee-operating-model" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Committee operating model
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-a-tiered-approval-framework" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. A tiered approval framework
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-common-governance-failure-modes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Common governance failure modes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#worked-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Worked example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2010,8 +2187,175 @@
 
 
 <h1 id="02-building-an-ai-tools-governance-committee">02 · Building an AI Tools Governance Committee<a class="headerlink" href="#02-building-an-ai-tools-governance-committee" title="Permanent link">&para;</a></h1>
-<p>This module is part of Level 4 · Master.</p>
-<p>More lessons are on the way — check back soon.</p>
+<p>A strategy (Module 1) needs a body that actually operates it day to day.
+This module covers how to structure a governance committee that makes
+real decisions without becoming a bottleneck.</p>
+<h2 id="1-who-belongs-on-the-committee">1. Who belongs on the committee<a class="headerlink" href="#1-who-belongs-on-the-committee" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Contribution</th>
+<th>Risk if missing</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Security/IT</td>
+<td>Assesses data handling, access, integration risk</td>
+<td>Tools approved with unreviewed data exposure</td>
+</tr>
+<tr>
+<td>Legal/compliance</td>
+<td>Reviews contracts, DPAs, regulatory exposure</td>
+<td>Signed terms nobody vetted</td>
+</tr>
+<tr>
+<td>Finance</td>
+<td>Tracks spend, ROI, renewal terms</td>
+<td>Uncontrolled proliferation of paid seats</td>
+</tr>
+<tr>
+<td>A representative end-user function</td>
+<td>Grounds decisions in real workflow needs</td>
+<td>Guardrails that block legitimate, valuable use</td>
+</tr>
+<tr>
+<td>An executive sponsor</td>
+<td>Gives the committee authority to act</td>
+<td>Recommendations that get ignored</td>
+</tr>
+</tbody>
+</table>
+<p>A committee missing the end-user voice tends to produce guardrails that
+are technically sound but unusable; a committee missing security or legal
+tends to approve tools that later cause an incident.</p>
+<h2 id="2-committee-operating-model">2. Committee operating model<a class="headerlink" href="#2-committee-operating-model" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Element</th>
+<th>Design choice</th>
+<th>Reasoning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Meeting cadence</td>
+<td>Regular (e.g., biweekly) plus an expedited path</td>
+<td>Regular cadence handles routine reviews; expedited path prevents urgent requests from waiting weeks</td>
+</tr>
+<tr>
+<td>Decision thresholds</td>
+<td>Tiered by spend/risk (e.g., auto-approve under $X, committee review above)</td>
+<td>Keeps low-risk decisions fast, reserves committee time for real risk</td>
+</tr>
+<tr>
+<td>Documentation</td>
+<td>Every decision logged with rationale</td>
+<td>Enables future re-evaluation and audit</td>
+</tr>
+<tr>
+<td>Escalation path</td>
+<td>Clear route for disagreement (e.g., to the executive sponsor)</td>
+<td>Prevents deadlock from stalling all decisions</td>
+</tr>
+<tr>
+<td>Sunset/review clause</td>
+<td>Every approval has a review date</td>
+<td>Prevents "approved forever" tools from evading later scrutiny</td>
+</tr>
+</tbody>
+</table>
+<h2 id="3-a-tiered-approval-framework">3. A tiered approval framework<a class="headerlink" href="#3-a-tiered-approval-framework" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Tier</th>
+<th>Criteria</th>
+<th>Approval path</th>
+<th>Typical turnaround</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Tier 1</td>
+<td>Low spend, no sensitive data, single-user</td>
+<td>Self-serve from a pre-approved catalog</td>
+<td>Immediate</td>
+</tr>
+<tr>
+<td>Tier 2</td>
+<td>Team-level tool, moderate spend, internal data only</td>
+<td>Manager + governance checklist sign-off</td>
+<td>Days</td>
+</tr>
+<tr>
+<td>Tier 3</td>
+<td>Org-wide or high spend, or touches regulated/customer data</td>
+<td>Full committee review</td>
+<td>Weeks</td>
+</tr>
+<tr>
+<td>Tier 4</td>
+<td>Novel use case, unclear risk category</td>
+<td>Committee review plus legal/security deep dive</td>
+<td>Weeks to a month</td>
+</tr>
+</tbody>
+</table>
+<h2 id="4-common-governance-failure-modes">4. Common governance failure modes<a class="headerlink" href="#4-common-governance-failure-modes" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Failure mode</th>
+<th>Symptom</th>
+<th>Fix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Committee reviews everything at the same depth</td>
+<td>Chronic backlog, shadow adoption to bypass it</td>
+<td>Adopt the tiered model above</td>
+</tr>
+<tr>
+<td>No documented rationale</td>
+<td>Same debates repeat every renewal</td>
+<td>Require a rationale log entry per decision</td>
+</tr>
+<tr>
+<td>No end-user representation</td>
+<td>Guardrails technically correct but ignored in practice</td>
+<td>Add a rotating end-user seat</td>
+</tr>
+<tr>
+<td>No expedited path</td>
+<td>Urgent, legitimate requests wait for the regular cycle</td>
+<td>Define and empower an expedited track with a lower quorum</td>
+</tr>
+<tr>
+<td>Approvals never expire</td>
+<td>Risk profile of an old tool goes unreviewed for years</td>
+<td>Attach a mandatory review date to every approval</td>
+</tr>
+</tbody>
+</table>
+<h2 id="worked-example">Worked example<a class="headerlink" href="#worked-example" title="Permanent link">&para;</a></h2>
+<p>A governance committee initially reviews every tool request at full depth,
+producing a six-week backlog and driving teams to adopt tools without
+asking. After adopting the tiered framework, 70% of requests (low-spend,
+non-sensitive) are self-served against a pre-approved catalog immediately;
+only the remaining 30% reach the committee, and an expedited two-day track
+is added for time-sensitive Tier 3 requests. Backlog clears within a
+quarter, and shadow adoption — measured via a follow-up inventory —
+drops sharply because the sanctioned path is now faster than going around
+it.</p>
+<h2 id="exercise">Exercise<a class="headerlink" href="#exercise" title="Permanent link">&para;</a></h2>
+<p>Design a governance committee charter for a real or plausible
+organization: name the roles from section 1, define at least three
+approval tiers with concrete thresholds, and specify the escalation and
+review-date rules from sections 2-3.</p>
 
 
 

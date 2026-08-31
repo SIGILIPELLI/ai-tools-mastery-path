@@ -1484,6 +1484,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07 · Data Governance for AI Tool Usage
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1500,6 +1518,102 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-data-flows-to-map-before-rollout" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Data flows to map before rollout
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-a-data-classification-approach" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. A data classification approach
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-governance-roles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Governance roles
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-handling-shadow-ai-usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Handling shadow AI usage
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-incident-response-for-ai-related-data-exposure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Incident response for AI-related data exposure
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#worked-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Worked example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1991,6 +2105,91 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-data-flows-to-map-before-rollout" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Data flows to map before rollout
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-a-data-classification-approach" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. A data classification approach
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-governance-roles" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Governance roles
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-handling-shadow-ai-usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Handling shadow AI usage
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-incident-response-for-ai-related-data-exposure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Incident response for AI-related data exposure
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#worked-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Worked example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2010,8 +2209,173 @@
 
 
 <h1 id="07-data-governance-for-ai-tool-usage">07 · Data Governance for AI Tool Usage<a class="headerlink" href="#07-data-governance-for-ai-tool-usage" title="Permanent link">&para;</a></h1>
-<p>This module is part of Level 3 · Advanced.</p>
-<p>More lessons are on the way — check back soon.</p>
+<p>Once a team routes real work through AI tools, the question stops being
+"is this tool good" and becomes "what data are we putting into it, and
+who is accountable for what comes back out." This module builds a
+governance model for that.</p>
+<h2 id="1-data-flows-to-map-before-rollout">1. Data flows to map before rollout<a class="headerlink" href="#1-data-flows-to-map-before-rollout" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Flow</th>
+<th>Question to answer</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Input data</td>
+<td>What data types (customer PII, source code, financials, health data) will realistically be pasted or uploaded into the tool?</td>
+</tr>
+<tr>
+<td>Retention</td>
+<td>Does the vendor retain inputs/outputs, and for how long? Is retention configurable?</td>
+</tr>
+<tr>
+<td>Training use</td>
+<td>Can the vendor use submitted data to train models, and can that be contractually disabled?</td>
+</tr>
+<tr>
+<td>Sub-processors</td>
+<td>Does the vendor pass data to other companies (e.g., a third-party model provider)?</td>
+</tr>
+<tr>
+<td>Output storage</td>
+<td>Where do generated outputs live afterward, and who can access them?</td>
+</tr>
+</tbody>
+</table>
+<p>Skipping this mapping is the single most common governance failure: teams
+approve a tool based on its capabilities and only discover the data flow
+questions after an incident.</p>
+<h2 id="2-a-data-classification-approach">2. A data classification approach<a class="headerlink" href="#2-a-data-classification-approach" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Class</th>
+<th>Examples</th>
+<th>AI tool policy</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Public</td>
+<td>Marketing copy, published docs</td>
+<td>Any approved tool, no restrictions</td>
+</tr>
+<tr>
+<td>Internal</td>
+<td>Internal process docs, non-sensitive code</td>
+<td>Approved tools with enterprise/no-train terms</td>
+</tr>
+<tr>
+<td>Confidential</td>
+<td>Customer data, contracts, unreleased financials</td>
+<td>Only tools with a signed data processing agreement and no-train guarantee; consider on-prem/private-instance options</td>
+</tr>
+<tr>
+<td>Regulated</td>
+<td>Health, payment, government-restricted data</td>
+<td>Default to prohibited unless a compliance review explicitly approves a specific tool and configuration</td>
+</tr>
+</tbody>
+</table>
+<p>Publish this table where employees can see it before they need it — this
+mirrors the tiered risk classification introduced in Level 2's privacy
+module, now formalized as policy rather than personal judgment.</p>
+<h2 id="3-governance-roles">3. Governance roles<a class="headerlink" href="#3-governance-roles" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Responsibility</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Data owner (per system/dataset)</td>
+<td>Decides which classification applies and approves or denies AI tool use against it</td>
+</tr>
+<tr>
+<td>IT/Security</td>
+<td>Vets vendor security posture, manages access provisioning, monitors for shadow AI use</td>
+</tr>
+<tr>
+<td>Legal/Compliance</td>
+<td>Reviews contracts, retention terms, and regulatory exposure</td>
+</tr>
+<tr>
+<td>Tool champions (Level 3 Module 1)</td>
+<td>Surface real usage patterns so policy reflects reality, not assumptions</td>
+</tr>
+</tbody>
+</table>
+<h2 id="4-handling-shadow-ai-usage">4. Handling shadow AI usage<a class="headerlink" href="#4-handling-shadow-ai-usage" title="Permanent link">&para;</a></h2>
+<p>Employees will use unapproved tools if approved ones are slow, restrictive,
+or absent — this is the AI-era version of shadow IT.</p>
+<table>
+<thead>
+<tr>
+<th>Signal</th>
+<th>Response</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Survey/anecdotal reports of unapproved tool use</td>
+<td>Investigate what need it's filling before banning it</td>
+</tr>
+<tr>
+<td>Network/DLP logs showing traffic to unapproved AI domains</td>
+<td>Treat as a data incident review, not just a policy violation</td>
+</tr>
+<tr>
+<td>Repeated requests for a specific unapproved tool</td>
+<td>Fast-track an evaluation (Level 3 Module 3) instead of only enforcing the ban</td>
+</tr>
+</tbody>
+</table>
+<p>A pure ban without a fast, viable alternative reliably fails — the fix is
+converting demand into a supported option, not just enforcement.</p>
+<h2 id="5-incident-response-for-ai-related-data-exposure">5. Incident response for AI-related data exposure<a class="headerlink" href="#5-incident-response-for-ai-related-data-exposure" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Step</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Contain</td>
+<td>Identify what was submitted, to which tool, and whether retention/training was in effect</td>
+</tr>
+<tr>
+<td>Assess</td>
+<td>Determine data classification involved and whether it triggers a breach-notification obligation</td>
+</tr>
+<tr>
+<td>Remediate</td>
+<td>Request deletion from vendor where contractually possible; revoke tool access if needed</td>
+</tr>
+<tr>
+<td>Prevent recurrence</td>
+<td>Update policy, training, or tool approval based on the root cause</td>
+</tr>
+</tbody>
+</table>
+<h2 id="worked-example">Worked example<a class="headerlink" href="#worked-example" title="Permanent link">&para;</a></h2>
+<p>A product manager pastes an unreleased pricing sheet into a general-purpose
+AI chat tool to reformat it, not realizing the tool's free tier retains
+inputs for model training. Data governance review classifies the pricing
+sheet as confidential, triggers vendor deletion request, and the incident
+becomes the forcing function for publishing the classification table in
+section 2 company-wide, plus provisioning an enterprise tier with no-train
+terms for the whole team.</p>
+<h2 id="exercise">Exercise<a class="headerlink" href="#exercise" title="Permanent link">&para;</a></h2>
+<p>Take a real (or realistic) dataset your team works with. Classify it using
+the section 2 table, and write the specific AI tool policy that
+classification implies — including which currently-used tools would pass
+or fail that policy.</p>
 
 
 

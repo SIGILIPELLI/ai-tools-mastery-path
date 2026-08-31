@@ -1802,6 +1802,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05 · Ethical & Responsible AI Tool Use at Scale
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1818,6 +1836,91 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-ethical-risk-categories-at-scale" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Ethical risk categories at scale
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-a-responsible-use-at-scale-framework" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. A responsible-use-at-scale framework
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-a-decision-risk-tiering-for-ai-assisted-decisions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. A decision-risk tiering for AI-assisted decisions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-common-failure-modes-at-scale" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Common failure modes at scale
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#worked-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Worked example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1991,6 +2094,80 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-ethical-risk-categories-at-scale" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Ethical risk categories at scale
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-a-responsible-use-at-scale-framework" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. A responsible-use-at-scale framework
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-a-decision-risk-tiering-for-ai-assisted-decisions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. A decision-risk tiering for AI-assisted decisions
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-common-failure-modes-at-scale" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Common failure modes at scale
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#worked-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Worked example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2010,8 +2187,161 @@
 
 
 <h1 id="05-ethical-responsible-ai-tool-use-at-scale">05 · Ethical &amp; Responsible AI Tool Use at Scale<a class="headerlink" href="#05-ethical-responsible-ai-tool-use-at-scale" title="Permanent link">&para;</a></h1>
-<p>This module is part of Level 4 · Master.</p>
-<p>More lessons are on the way — check back soon.</p>
+<p>Individual and team-level ethical use (earlier levels) focuses on
+immediate, visible harms. At organizational scale, the same tool used by
+thousands of people can create systemic effects that no individual usage
+reviewer would catch.</p>
+<h2 id="1-ethical-risk-categories-at-scale">1. Ethical risk categories at scale<a class="headerlink" href="#1-ethical-risk-categories-at-scale" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Description</th>
+<th>Example symptom</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Aggregate bias amplification</td>
+<td>A small per-decision bias compounds across thousands of decisions</td>
+<td>A hiring-screening tool consistently disadvantages a group, invisible in any single review</td>
+</tr>
+<tr>
+<td>Deskilling</td>
+<td>Widespread reliance erodes a capability the org may need later</td>
+<td>Junior staff who never develop judgment the tool currently substitutes for</td>
+</tr>
+<tr>
+<td>Accountability diffusion</td>
+<td>"The AI decided" becomes a way to avoid ownership of outcomes</td>
+<td>No human can explain or defend a consequential decision</td>
+</tr>
+<tr>
+<td>Transparency debt to stakeholders</td>
+<td>Customers/employees affected by AI-assisted decisions aren't told</td>
+<td>Erodes trust when discovered, and may violate disclosure obligations</td>
+</tr>
+<tr>
+<td>Uneven access</td>
+<td>AI tools available to some teams/roles but not others</td>
+<td>Creates internal inequity in who benefits from productivity gains</td>
+</tr>
+</tbody>
+</table>
+<h2 id="2-a-responsible-use-at-scale-framework">2. A responsible-use-at-scale framework<a class="headerlink" href="#2-a-responsible-use-at-scale-framework" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Practice</th>
+<th>What it looks like</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Impact assessment for consequential uses</td>
+<td>Before deploying AI to a decision that affects people (hiring, credit, discipline), assess it for bias and explainability, not just accuracy</td>
+</tr>
+<tr>
+<td>Human-in-the-loop for high-stakes decisions</td>
+<td>A human makes and owns the final call; the tool assists, doesn't decide alone</td>
+</tr>
+<tr>
+<td>Disclosure to affected parties</td>
+<td>People affected by an AI-assisted decision are told, where relevant and required</td>
+</tr>
+<tr>
+<td>Periodic bias audits</td>
+<td>Aggregate outcomes reviewed for disparate impact, not just spot-checked</td>
+</tr>
+<tr>
+<td>Deskilling mitigation</td>
+<td>Deliberately preserve some non-AI-assisted practice for skills the org can't afford to lose</td>
+</tr>
+<tr>
+<td>Equitable access policy</td>
+<td>AI tool access isn't gated in ways that create unfair advantage among staff</td>
+</tr>
+</tbody>
+</table>
+<h2 id="3-a-decision-risk-tiering-for-ai-assisted-decisions">3. A decision-risk tiering for AI-assisted decisions<a class="headerlink" href="#3-a-decision-risk-tiering-for-ai-assisted-decisions" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Tier</th>
+<th>Example</th>
+<th>Required control</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Low stakes</td>
+<td>Draft email suggestions</td>
+<td>Standard governance only</td>
+</tr>
+<tr>
+<td>Moderate stakes</td>
+<td>Prioritizing which support tickets to review first</td>
+<td>Spot-check for bias periodically</td>
+</tr>
+<tr>
+<td>High stakes</td>
+<td>Hiring screen, performance rating input</td>
+<td>Human-in-the-loop mandatory, formal impact assessment, disclosure</td>
+</tr>
+<tr>
+<td>Critical</td>
+<td>Credit, legal, safety-related decisions</td>
+<td>Impact assessment, human final decision, audit trail, likely regulatory obligations</td>
+</tr>
+</tbody>
+</table>
+<h2 id="4-common-failure-modes-at-scale">4. Common failure modes at scale<a class="headerlink" href="#4-common-failure-modes-at-scale" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Failure mode</th>
+<th>Fix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bias only checked at initial deployment, never again</td>
+<td>Bake in a recurring bias audit cadence tied to the decision tier</td>
+</tr>
+<tr>
+<td>"The AI recommended it" used to deflect accountability</td>
+<td>Explicitly assign human ownership of every high-stakes AI-assisted decision</td>
+</tr>
+<tr>
+<td>No visibility into aggregate outcomes across thousands of individual uses</td>
+<td>Instrument and review outcome data in aggregate, not just anecdotally</td>
+</tr>
+<tr>
+<td>Ethics policy exists but isn't tied to the decision-tiering that would trigger it</td>
+<td>Wire the tiering table into the actual deployment approval process (Module 2)</td>
+</tr>
+<tr>
+<td>Uneven tool access treated as a minor inconsistency</td>
+<td>Recognize it as an equity issue and address deliberately</td>
+</tr>
+</tbody>
+</table>
+<h2 id="worked-example">Worked example<a class="headerlink" href="#worked-example" title="Permanent link">&para;</a></h2>
+<p>A company deploys an AI tool to help triage internal promotion
+nominations. Individually, each recommendation looks reasonable. A
+quarterly aggregate audit — run because the decision was correctly
+tiered as "high stakes" at deployment — reveals that nominees from one
+office location are being deprioritized at a statistically unusual rate,
+traced to a proxy variable in the tool's inputs correlated with that
+office. Because human-in-the-loop was mandatory for this tier, no
+decisions were made by the tool alone, but the audit still triggers a
+retraining/adjustment of the tool's inputs and a review of past
+recommendations from that office.</p>
+<h2 id="exercise">Exercise<a class="headerlink" href="#exercise" title="Permanent link">&para;</a></h2>
+<p>Take three AI-assisted decisions in use (or plausible) at your
+organization. Classify each using the section 3 tiering table, and for
+any that land at "high stakes" or above, specify what human-in-the-loop
+control and audit cadence should exist but currently might not.</p>
 
 
 

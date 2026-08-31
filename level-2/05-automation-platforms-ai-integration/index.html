@@ -1054,6 +1054,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05 · Automation Platforms & AI Integration
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1070,6 +1088,102 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-what-an-ai-step-adds-to-automation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. What an AI step adds to automation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-where-ai-steps-fit-in-a-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Where AI steps fit in a workflow
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-a-design-checklist-before-shipping-an-ai-integrated-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. A design checklist before shipping an AI-integrated workflow
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-common-integration-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Common integration patterns
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-common-failure-modes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Common failure modes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#worked-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Worked example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1991,6 +2105,91 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-what-an-ai-step-adds-to-automation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. What an AI step adds to automation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-where-ai-steps-fit-in-a-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Where AI steps fit in a workflow
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-a-design-checklist-before-shipping-an-ai-integrated-workflow" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. A design checklist before shipping an AI-integrated workflow
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-common-integration-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Common integration patterns
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-common-failure-modes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Common failure modes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#worked-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Worked example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2010,8 +2209,181 @@
 
 
 <h1 id="05-automation-platforms-ai-integration">05 · Automation Platforms &amp; AI Integration<a class="headerlink" href="#05-automation-platforms-ai-integration" title="Permanent link">&para;</a></h1>
-<p>This module is part of Level 2 · Intermediate.</p>
-<p>More lessons are on the way — check back soon.</p>
+<p>Automation platforms (workflow/integration tools that connect apps and
+trigger actions) become far more capable once an AI step is inserted —
+turning rigid if-this-then-that logic into workflows that can read,
+summarize, classify, and generate. This module covers how to design that
+integration soundly.</p>
+<h2 id="1-what-an-ai-step-adds-to-automation">1. What an AI step adds to automation<a class="headerlink" href="#1-what-an-ai-step-adds-to-automation" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Without AI step</th>
+<th>With AI step</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Route email to a folder by fixed sender rule</td>
+<td>Classify email intent/urgency and route accordingly</td>
+</tr>
+<tr>
+<td>Copy form data verbatim into a record</td>
+<td>Extract and normalize structured fields from free-text input</td>
+</tr>
+<tr>
+<td>Send a fixed template message</td>
+<td>Generate a personalized message from variable inputs</td>
+</tr>
+<tr>
+<td>Trigger only on exact keyword match</td>
+<td>Trigger on semantic meaning ("customer sounds frustrated")</td>
+</tr>
+</tbody>
+</table>
+<p>The shift is from deterministic rules to probabilistic judgment — powerful,
+but it introduces a new class of failure the platform itself won't catch.</p>
+<h2 id="2-where-ai-steps-fit-in-a-workflow">2. Where AI steps fit in a workflow<a class="headerlink" href="#2-where-ai-steps-fit-in-a-workflow" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Position</th>
+<th>Typical use</th>
+<th>Risk profile</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Early (classification/routing)</td>
+<td>Decide which branch a workflow takes</td>
+<td>Medium — a misroute is usually recoverable downstream</td>
+</tr>
+<tr>
+<td>Middle (transformation)</td>
+<td>Reformat, summarize, extract fields</td>
+<td>Medium — errors propagate to everything after</td>
+</tr>
+<tr>
+<td>Late (generation before an external action)</td>
+<td>Draft a message, document, or response</td>
+<td>High if the output goes out with no review — mistakes become externally visible</td>
+</tr>
+<tr>
+<td>Terminal (fully autonomous send/post/execute)</td>
+<td>AI output directly triggers an irreversible action</td>
+<td>Highest — no human checkpoint before consequences land</td>
+</tr>
+</tbody>
+</table>
+<h2 id="3-a-design-checklist-before-shipping-an-ai-integrated-workflow">3. A design checklist before shipping an AI-integrated workflow<a class="headerlink" href="#3-a-design-checklist-before-shipping-an-ai-integrated-workflow" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Check</th>
+<th>Why it matters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Is there a human review step before any externally visible or irreversible action?</td>
+<td>AI errors in automated pipelines scale silently until someone notices</td>
+</tr>
+<tr>
+<td>What happens on a malformed or low-confidence AI output?</td>
+<td>Undefined failure paths cause workflows to silently do the wrong thing</td>
+</tr>
+<tr>
+<td>Is there a fallback to a deterministic rule when AI is uncertain?</td>
+<td>Not every case needs judgment; deterministic paths are cheaper and more reliable</td>
+</tr>
+<tr>
+<td>Are inputs to the AI step logged?</td>
+<td>Without logs, a bad outcome is nearly impossible to diagnose after the fact</td>
+</tr>
+<tr>
+<td>What data is sent to the AI provider, and is that allowed under your data policy?</td>
+<td>Automation platforms often pass more context than a single chat prompt would</td>
+</tr>
+<tr>
+<td>Is there a kill switch / easy way to pause the workflow?</td>
+<td>Automated workflows fail at scale and speed; you need to be able to stop them fast</td>
+</tr>
+</tbody>
+</table>
+<h2 id="4-common-integration-patterns">4. Common integration patterns<a class="headerlink" href="#4-common-integration-patterns" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Pattern</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Classify-then-branch</td>
+<td>AI labels the input; deterministic rules take over from there</td>
+</tr>
+<tr>
+<td>Extract-then-validate</td>
+<td>AI pulls structured fields; a validation step checks them against expected types/ranges before use</td>
+</tr>
+<tr>
+<td>Draft-then-approve</td>
+<td>AI generates content; a human approves or edits before it is sent</td>
+</tr>
+<tr>
+<td>Summarize-then-notify</td>
+<td>AI condenses a long input; a person is notified with the summary and a link to the source</td>
+</tr>
+</tbody>
+</table>
+<h2 id="5-common-failure-modes">5. Common failure modes<a class="headerlink" href="#5-common-failure-modes" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Failure</th>
+<th>Cause</th>
+<th>Fix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Silent drift</td>
+<td>AI classification quality degrades over time as input patterns shift</td>
+<td>Periodically sample and review actual classifications, not just at launch</td>
+</tr>
+<tr>
+<td>Runaway automation</td>
+<td>A terminal AI-generation step with no human gate causes a bad message to reach many recipients</td>
+<td>Never wire AI generation directly to an irreversible send/post at high volume without a review step</td>
+</tr>
+<tr>
+<td>Cost surprise</td>
+<td>Every workflow run consumes AI usage, and volume scales with trigger frequency</td>
+<td>Model cost against expected trigger volume before deployment, not after the first bill</td>
+</tr>
+<tr>
+<td>Context leakage</td>
+<td>Automation platforms may pass more upstream data into the AI step than intended</td>
+<td>Explicitly define what fields are sent, don't pass whole records by default</td>
+</tr>
+</tbody>
+</table>
+<h2 id="worked-example">Worked example<a class="headerlink" href="#worked-example" title="Permanent link">&para;</a></h2>
+<p>A support team automates first-response triage: incoming tickets are
+classified by urgency and topic using an AI step, then routed to the right
+queue with a deterministic rule. Early on, the team wired AI-drafted
+replies to auto-send for "low urgency" tickets to save time. After two
+drafts went out with factually wrong account details, they changed the
+workflow so AI drafts always land in an agent's queue for one-click
+approval rather than auto-sending — keeping the speed benefit of
+drafting while removing the risk of unreviewed sends.</p>
+<h2 id="exercise">Exercise<a class="headerlink" href="#exercise" title="Permanent link">&para;</a></h2>
+<p>Take one recurring manual task you or your team does with an automation
+platform (or would like to). Sketch the workflow with an AI step inserted
+at the right position from section 2, and answer every question in the
+section 3 checklist for it in writing before considering it ready to
+build.</p>
 
 
 

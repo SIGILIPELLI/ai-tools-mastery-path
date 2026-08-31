@@ -1746,6 +1746,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03 · Advanced Vendor Risk Management for AI Tools
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1762,6 +1780,91 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-risk-categories-beyond-initial-evaluation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Risk categories beyond initial evaluation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-a-continuous-vendor-risk-framework" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. A continuous vendor risk framework
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-a-vendor-risk-register-template" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. A vendor risk register (template)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-common-advanced-risk-failure-modes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Common advanced-risk failure modes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#worked-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Worked example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1991,6 +2094,80 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-risk-categories-beyond-initial-evaluation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Risk categories beyond initial evaluation
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-a-continuous-vendor-risk-framework" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. A continuous vendor risk framework
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-a-vendor-risk-register-template" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. A vendor risk register (template)
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-common-advanced-risk-failure-modes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Common advanced-risk failure modes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#worked-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Worked example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2010,8 +2187,176 @@
 
 
 <h1 id="03-advanced-vendor-risk-management-for-ai-tools">03 · Advanced Vendor Risk Management for AI Tools<a class="headerlink" href="#03-advanced-vendor-risk-management-for-ai-tools" title="Permanent link">&para;</a></h1>
-<p>This module is part of Level 4 · Master.</p>
-<p>More lessons are on the way — check back soon.</p>
+<p>Level 3 Module 3 covered evaluating a single vendor. At organizational
+scale, the challenge shifts to managing risk across a portfolio of
+vendors over time, including risks that only appear after the contract is
+signed.</p>
+<h2 id="1-risk-categories-beyond-initial-evaluation">1. Risk categories beyond initial evaluation<a class="headerlink" href="#1-risk-categories-beyond-initial-evaluation" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Risk category</th>
+<th>Description</th>
+<th>Why it's missed at initial evaluation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Concentration risk</td>
+<td>Too many critical workflows depend on one vendor</td>
+<td>Only visible when you map dependencies across the whole portfolio</td>
+</tr>
+<tr>
+<td>Silent model/policy changes</td>
+<td>Vendor changes underlying model, training data policy, or terms post-signing</td>
+<td>Contracts rarely guarantee against this; requires ongoing monitoring</td>
+</tr>
+<tr>
+<td>Fourth-party risk</td>
+<td>Your vendor relies on subprocessors you never evaluated</td>
+<td>Initial DPA review often stops at the primary vendor</td>
+</tr>
+<tr>
+<td>Regulatory drift</td>
+<td>New regulation applies retroactively to an existing tool's data handling</td>
+<td>Wasn't a risk at signing; becomes one as law changes</td>
+</tr>
+<tr>
+<td>Vendor viability decline</td>
+<td>Vendor's business weakens post-signing (acquisition, funding issues)</td>
+<td>Financial health assessed once, rarely re-checked</td>
+</tr>
+</tbody>
+</table>
+<h2 id="2-a-continuous-vendor-risk-framework">2. A continuous vendor risk framework<a class="headerlink" href="#2-a-continuous-vendor-risk-framework" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Stage</th>
+<th>Activity</th>
+<th>Frequency</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Onboarding</td>
+<td>Full evaluation (Level 3 Module 3 scorecard) plus fourth-party subprocessor list</td>
+<td>Once, at signing</td>
+</tr>
+<tr>
+<td>Monitoring</td>
+<td>Track vendor terms-of-service changes, security disclosures, funding/ownership news</td>
+<td>Ongoing (quarterly check minimum)</td>
+</tr>
+<tr>
+<td>Periodic re-scoring</td>
+<td>Re-run the scorecard against current terms and usage</td>
+<td>Annually or at renewal</td>
+</tr>
+<tr>
+<td>Concentration review</td>
+<td>Map which business processes depend on which vendors</td>
+<td>Annually, portfolio-wide</td>
+</tr>
+<tr>
+<td>Incident response readiness</td>
+<td>Confirm the org knows what to do if this vendor has a breach or outage</td>
+<td>At onboarding and annually</td>
+</tr>
+</tbody>
+</table>
+<h2 id="3-a-vendor-risk-register-template">3. A vendor risk register (template)<a class="headerlink" href="#3-a-vendor-risk-register-template" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Purpose</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Vendor name and tier</td>
+<td>Identifies criticality</td>
+</tr>
+<tr>
+<td>Data classes handled</td>
+<td>What's actually exposed if this vendor fails</td>
+</tr>
+<tr>
+<td>Subprocessors known</td>
+<td>Fourth-party exposure</td>
+</tr>
+<tr>
+<td>Last re-score date</td>
+<td>Flags overdue reviews</td>
+</tr>
+<tr>
+<td>Concentration flag</td>
+<td>Whether this vendor is a single point of failure for a critical process</td>
+</tr>
+<tr>
+<td>Owner</td>
+<td>Who is accountable for monitoring this vendor</td>
+</tr>
+<tr>
+<td>Exit plan status</td>
+<td>Whether a documented, tested exit/migration path exists</td>
+</tr>
+</tbody>
+</table>
+<h2 id="4-common-advanced-risk-failure-modes">4. Common advanced-risk failure modes<a class="headerlink" href="#4-common-advanced-risk-failure-modes" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Failure mode</th>
+<th>Consequence</th>
+<th>Fix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Treating evaluation as a one-time gate</td>
+<td>Risk profile drifts unnoticed post-signing</td>
+<td>Institute the periodic re-scoring cadence</td>
+</tr>
+<tr>
+<td>No fourth-party visibility</td>
+<td>A subprocessor breach is discovered only after it hits the news</td>
+<td>Require subprocessor disclosure in every DPA and track it</td>
+</tr>
+<tr>
+<td>No concentration mapping</td>
+<td>A single vendor outage takes down multiple "independent" workflows</td>
+<td>Run the annual concentration review across the whole portfolio</td>
+</tr>
+<tr>
+<td>Exit plans exist only on paper</td>
+<td>Migration takes months longer than expected when actually needed</td>
+<td>Test the exit/export path at least once per critical vendor, not just document it</td>
+</tr>
+<tr>
+<td>Risk register not owned by anyone</td>
+<td>Register goes stale within a year</td>
+<td>Assign a named owner per vendor, reviewed at the same cadence as re-scoring</td>
+</tr>
+</tbody>
+</table>
+<h2 id="worked-example">Worked example<a class="headerlink" href="#worked-example" title="Permanent link">&para;</a></h2>
+<p>An organization's annual concentration review reveals that three
+"independent" AI tools used across customer support, sales, and internal
+analytics all route through the same underlying model provider as a
+subprocessor — a fact none of the three onboarding evaluations had
+surfaced because each was reviewed in isolation. The risk register is
+updated to flag this as a portfolio-level concentration risk, and the
+governance committee (Module 2) commissions a review of whether any single
+provider now represents an unacceptable single point of failure, leading
+to a deliberate diversification decision for the highest-criticality
+workflow.</p>
+<h2 id="exercise">Exercise<a class="headerlink" href="#exercise" title="Permanent link">&para;</a></h2>
+<p>Build a vendor risk register (section 3 template) for 3-5 real or
+plausible AI vendors your organization might use. For each, note whether a
+fourth-party subprocessor list exists and whether a concentration risk
+appears once you look across all of them together.</p>
 
 
 

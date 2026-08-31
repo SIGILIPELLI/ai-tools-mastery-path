@@ -1082,6 +1082,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06 · Data Privacy & Security When Using AI Tools
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1098,6 +1116,102 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-what-actually-happens-to-your-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. What actually happens to your data
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-a-data-sensitivity-classification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. A data sensitivity classification
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-a-pre-input-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. A pre-input checklist
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-practical-mitigations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Practical mitigations
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-common-pitfalls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Common pitfalls
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#worked-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Worked example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1991,6 +2105,91 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-what-actually-happens-to-your-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. What actually happens to your data
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-a-data-sensitivity-classification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. A data sensitivity classification
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-a-pre-input-checklist" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. A pre-input checklist
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-practical-mitigations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Practical mitigations
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-common-pitfalls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Common pitfalls
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#worked-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Worked example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2010,8 +2209,189 @@
 
 
 <h1 id="06-data-privacy-security-when-using-ai-tools">06 · Data Privacy &amp; Security When Using AI Tools<a class="headerlink" href="#06-data-privacy-security-when-using-ai-tools" title="Permanent link">&para;</a></h1>
-<p>This module is part of Level 2 · Intermediate.</p>
-<p>More lessons are on the way — check back soon.</p>
+<p>Every prompt, upload, and pasted document is data leaving your control to
+some degree. This module builds a durable framework for deciding what's
+safe to put into an AI tool and what isn't — one that survives any
+specific tool's changing terms of service.</p>
+<h2 id="1-what-actually-happens-to-your-data">1. What actually happens to your data<a class="headerlink" href="#1-what-actually-happens-to-your-data" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Question</th>
+<th>Why it matters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Is this input used to train future models?</td>
+<td>Determines whether your data could resurface, in some form, to other users later</td>
+</tr>
+<tr>
+<td>How long is it retained, and by whom?</td>
+<td>Retention windows and third-party processors both extend exposure</td>
+</tr>
+<tr>
+<td>Is it processed by the vendor only, or shared with sub-processors?</td>
+<td>More hops means more parties with access and more potential failure points</td>
+</tr>
+<tr>
+<td>Does an enterprise/business tier change these defaults?</td>
+<td>Many vendors do not train on paid/business-tier data by default — but "default" isn't the same as "guaranteed," read the actual terms</td>
+</tr>
+<tr>
+<td>Where is data stored/processed geographically?</td>
+<td>Matters for regulatory compliance (e.g., data residency requirements)</td>
+</tr>
+</tbody>
+</table>
+<p>Never assume; check the specific tool's current data-handling terms before
+sending anything sensitive, and re-check periodically since terms change.</p>
+<h2 id="2-a-data-sensitivity-classification">2. A data sensitivity classification<a class="headerlink" href="#2-a-data-sensitivity-classification" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Class</th>
+<th>Examples</th>
+<th>AI tool default</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Public</td>
+<td>Published content, marketing copy, public docs</td>
+<td>Generally safe with any tool</td>
+</tr>
+<tr>
+<td>Internal, low-sensitivity</td>
+<td>Draft internal docs, non-confidential process notes</td>
+<td>Safe with reputable tools under a no-training policy</td>
+</tr>
+<tr>
+<td>Confidential</td>
+<td>Financial figures, strategy, unreleased product details</td>
+<td>Only with vetted enterprise-tier tools under contract terms; never free consumer tiers</td>
+</tr>
+<tr>
+<td>Regulated/PII</td>
+<td>Health records, SSNs, financial account data, biometric data</td>
+<td>Only with tools specifically compliant for that data class (e.g., BAA-covered for health data), and often not at all</td>
+</tr>
+<tr>
+<td>Credentials/secrets</td>
+<td>Passwords, API keys, tokens</td>
+<td>Never — no exception</td>
+</tr>
+</tbody>
+</table>
+<h2 id="3-a-pre-input-checklist">3. A pre-input checklist<a class="headerlink" href="#3-a-pre-input-checklist" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Check</th>
+<th>Action if it fails</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Do I know this tool's data retention/training policy?</td>
+<td>Look it up before pasting; don't assume based on the vendor's reputation alone</td>
+</tr>
+<tr>
+<td>Is this the free/consumer tier or the enterprise/business tier?</td>
+<td>Free tiers usually have weaker data guarantees — downgrade what you're willing to input accordingly</td>
+</tr>
+<tr>
+<td>Does this input contain regulated data (health, financial, biometric, government ID)?</td>
+<td>Do not input it unless the tool has explicit, contracted compliance for that data class</td>
+</tr>
+<tr>
+<td>Does this input contain someone else's private information, not just my own?</td>
+<td>Get consent or redact before inputting third-party personal data</td>
+</tr>
+<tr>
+<td>Could this input alone, or combined with other public info, identify a specific person?</td>
+<td>Redact identifying details even from otherwise-low-sensitivity text</td>
+</tr>
+</tbody>
+</table>
+<h2 id="4-practical-mitigations">4. Practical mitigations<a class="headerlink" href="#4-practical-mitigations" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Technique</th>
+<th>How it helps</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Redaction before input</td>
+<td>Replace names, account numbers, and identifiers with placeholders before pasting</td>
+</tr>
+<tr>
+<td>Use enterprise/business tiers for work data</td>
+<td>These typically carry contractual no-training and data-handling guarantees consumer tiers don't</td>
+</tr>
+<tr>
+<td>Local/offline models for the most sensitive work</td>
+<td>Removes the network transmission risk entirely, at a capability cost</td>
+</tr>
+<tr>
+<td>Least-privilege tool access</td>
+<td>Don't grant an AI browser/agent tool more account or file access than the task requires</td>
+</tr>
+<tr>
+<td>Periodic policy re-check</td>
+<td>Vendor data policies change; re-verify at least twice a year for tools you use regularly</td>
+</tr>
+</tbody>
+</table>
+<h2 id="5-common-pitfalls">5. Common pitfalls<a class="headerlink" href="#5-common-pitfalls" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Pitfall</th>
+<th>Why it happens</th>
+<th>Fix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Pasting a full document to summarize "just the top section"</td>
+<td>Assuming the tool only sees what it responds about</td>
+<td>Redact or trim the input itself, not just the ask</td>
+</tr>
+<tr>
+<td>Trusting a screenshot doesn't count as data input</td>
+<td>Vision-capable tools process image content the same as text</td>
+<td>Treat images with sensitive content the same as sensitive text</td>
+</tr>
+<tr>
+<td>Assuming "it's just for a quick check" lowers the risk bar</td>
+<td>Retention/training policies don't care about your intent</td>
+<td>Apply the same classification rules regardless of how minor the use feels</td>
+</tr>
+<tr>
+<td>Confusing "the vendor is reputable" with "this specific tier has strong data terms"</td>
+<td>Reputation and contractual guarantees are different things</td>
+<td>Always check the terms for the specific tier you're actually using</td>
+</tr>
+</tbody>
+</table>
+<h2 id="worked-example">Worked example<a class="headerlink" href="#worked-example" title="Permanent link">&para;</a></h2>
+<p>An HR coordinator wants AI help drafting a performance review summary from
+her notes. Her notes contain the employee's name, salary figure, and a
+health-related accommodation detail. Running the sensitivity
+classification, salary and health information fall into confidential/
+regulated territory. Rather than pasting the raw notes into a general
+consumer AI chat tool, she redacts the name and health detail, replaces
+the salary with a placeholder range, drafts the generic structure with AI,
+and manually reinserts the specific figures into the final document
+herself — getting the drafting speedup without exposing regulated data.</p>
+<h2 id="exercise">Exercise<a class="headerlink" href="#exercise" title="Permanent link">&para;</a></h2>
+<p>Take a real piece of text you might otherwise paste into an AI tool.
+Classify it using the section 2 table, run it through the section 3
+checklist, and write down what — if anything — you'd need to redact or
+change about which tool you use before it's actually safe to input.</p>
 
 
 

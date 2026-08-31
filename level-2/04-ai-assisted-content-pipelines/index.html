@@ -1026,6 +1026,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 · AI-Assisted Content Creation Pipelines
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1042,6 +1060,102 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-why-single-prompt-content-fails-at-scale" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Why single-prompt content fails at scale
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-a-five-stage-content-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. A five-stage content pipeline
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-quality-gates-between-stages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Quality gates between stages
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-keeping-voice-and-originality" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Keeping voice and originality
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-common-pitfalls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Common pitfalls
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#worked-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Worked example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1991,6 +2105,91 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-why-single-prompt-content-fails-at-scale" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Why single-prompt content fails at scale
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-a-five-stage-content-pipeline" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. A five-stage content pipeline
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-quality-gates-between-stages" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Quality gates between stages
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-keeping-voice-and-originality" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Keeping voice and originality
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-common-pitfalls" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Common pitfalls
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#worked-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Worked example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2010,8 +2209,161 @@
 
 
 <h1 id="04-ai-assisted-content-creation-pipelines">04 · AI-Assisted Content Creation Pipelines<a class="headerlink" href="#04-ai-assisted-content-creation-pipelines" title="Permanent link">&para;</a></h1>
-<p>This module is part of Level 2 · Intermediate.</p>
-<p>More lessons are on the way — check back soon.</p>
+<p>A "pipeline" is a repeatable sequence of steps that turns a rough idea into
+finished content, with AI doing specific jobs at specific stages — not one
+prompt that tries to do everything at once. This module builds that
+sequence and the quality gates that keep it from producing generic output.</p>
+<h2 id="1-why-single-prompt-content-fails-at-scale">1. Why single-prompt content fails at scale<a class="headerlink" href="#1-why-single-prompt-content-fails-at-scale" title="Permanent link">&para;</a></h2>
+<p>Asking an AI tool to "write a blog post about X" in one shot tends to
+produce generic, structurally similar output regardless of topic, because
+the model has no real point of view, no specific audience data, and no
+editorial constraints unless you supply them. A pipeline fixes this by
+separating concerns: research, structure, drafting, and editing become
+distinct steps, each with its own inputs and quality bar.</p>
+<h2 id="2-a-five-stage-content-pipeline">2. A five-stage content pipeline<a class="headerlink" href="#2-a-five-stage-content-pipeline" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Stage</th>
+<th>Purpose</th>
+<th>Human input required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1. Brief</td>
+<td>Define audience, goal, tone, constraints, and what "good" looks like</td>
+<td>High — this is the step that most determines final quality</td>
+</tr>
+<tr>
+<td>2. Research/outline</td>
+<td>Gather facts and structure the argument before prose exists</td>
+<td>Medium — supply sources, approve the outline</td>
+</tr>
+<tr>
+<td>3. Draft</td>
+<td>Generate prose from the approved outline, section by section</td>
+<td>Low — generation is fast; review comes next</td>
+</tr>
+<tr>
+<td>4. Edit</td>
+<td>Check accuracy, voice, and structure against the brief</td>
+<td>High — this is where most of your time should go</td>
+</tr>
+<tr>
+<td>5. Finalize</td>
+<td>Format, fact-check final version, add any required disclosures</td>
+<td>Medium — final human sign-off before publishing</td>
+</tr>
+</tbody>
+</table>
+<h2 id="3-quality-gates-between-stages">3. Quality gates between stages<a class="headerlink" href="#3-quality-gates-between-stages" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Gate</th>
+<th>Question to answer before moving on</th>
+<th>Why skipping it is costly</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Brief → Outline</td>
+<td>Does the outline actually match the stated audience and goal?</td>
+<td>A wrong outline wastes all downstream drafting effort</td>
+</tr>
+<tr>
+<td>Outline → Draft</td>
+<td>Is the outline factually sound and logically ordered?</td>
+<td>Cheap to fix an outline; expensive to restructure a finished draft</td>
+</tr>
+<tr>
+<td>Draft → Edit</td>
+<td>Does the draft match the intended voice, or does it read as generic AI prose?</td>
+<td>Generic voice is the most common reader-visible tell</td>
+</tr>
+<tr>
+<td>Edit → Finalize</td>
+<td>Have all facts, numbers, and claims been verified?</td>
+<td>Publishing errors costs more credibility than the time saved drafting</td>
+</tr>
+</tbody>
+</table>
+<h2 id="4-keeping-voice-and-originality">4. Keeping voice and originality<a class="headerlink" href="#4-keeping-voice-and-originality" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Technique</th>
+<th>How it works</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Voice sample priming</td>
+<td>Give the AI 2-3 examples of your actual past writing before asking it to draft in your voice</td>
+</tr>
+<tr>
+<td>Constraint injection</td>
+<td>Specify banned phrases, required structure, and things to avoid (e.g., "no rhetorical questions as openers")</td>
+</tr>
+<tr>
+<td>Human-authored spine</td>
+<td>Write the outline's key sentences yourself; let AI expand around your framework rather than generate the framework</td>
+</tr>
+<tr>
+<td>Post-draft rewrite pass</td>
+<td>Always do at least one full editing pass by hand, even light — a purely AI-to-publish pipeline is detectable and often penalized by readers and platforms</td>
+</tr>
+</tbody>
+</table>
+<h2 id="5-common-pitfalls">5. Common pitfalls<a class="headerlink" href="#5-common-pitfalls" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Pitfall</th>
+<th>Symptom</th>
+<th>Fix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Skipping the brief</td>
+<td>Draft is fluent but off-target for audience or goal</td>
+<td>Never let drafting start without an explicit written brief</td>
+</tr>
+<tr>
+<td>Fact drift across drafts</td>
+<td>Numbers or claims subtly change between revision rounds</td>
+<td>Maintain a fact sheet and re-verify final draft against it, not against the prior draft</td>
+</tr>
+<tr>
+<td>Voice collapse</td>
+<td>Content sounds like every other AI-assisted post</td>
+<td>Invest in stage 1 (brief) and stage 4 (edit); these are where voice is preserved or lost</td>
+</tr>
+<tr>
+<td>Volume over quality</td>
+<td>Pipeline makes it easy to publish more, tempting to skip gates to increase throughput</td>
+<td>Fix your quality bar first, then scale volume — never the reverse</td>
+</tr>
+</tbody>
+</table>
+<h2 id="worked-example">Worked example<a class="headerlink" href="#worked-example" title="Permanent link">&para;</a></h2>
+<p>A small marketing team needs a weekly blog post. Instead of prompting for
+a full post each time, they build a pipeline: a shared brief template
+(audience, goal, three required takeaways), an AI-assisted outline step
+they review together, section-by-section drafting against the approved
+outline, and a mandatory human edit pass focused on voice and fact-checking
+against their fact sheet. Output volume barely changes, but the rejection
+rate at editorial review drops sharply because errors get caught at the
+outline stage instead of after a full draft is written.</p>
+<h2 id="exercise">Exercise<a class="headerlink" href="#exercise" title="Permanent link">&para;</a></h2>
+<p>Pick a piece of content you need to produce (a post, an email, a report
+section). Write a one-page brief covering audience, goal, tone, and three
+required points. Use an AI tool to generate an outline from the brief,
+revise the outline yourself, then draft one section from it. Compare that
+section against what a single "write me a post about X" prompt would have
+produced, and note the concrete differences.</p>
 
 
 

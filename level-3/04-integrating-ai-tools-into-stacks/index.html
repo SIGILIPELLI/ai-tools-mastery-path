@@ -1400,6 +1400,24 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 · Integrating AI Tools into Existing Software Stacks
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -1416,6 +1434,102 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-integration-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Integration patterns
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-architectural-considerations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Architectural considerations
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-a-gatewaymiddleware-checklist-for-larger-orgs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. A gateway/middleware checklist for larger orgs
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-common-integration-failure-modes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Common integration failure modes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-build-vs-buy-considerations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Build vs. buy considerations
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#worked-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Worked example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -1991,6 +2105,91 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#1-integration-patterns" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Integration patterns
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-architectural-considerations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Architectural considerations
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-a-gatewaymiddleware-checklist-for-larger-orgs" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. A gateway/middleware checklist for larger orgs
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-common-integration-failure-modes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Common integration failure modes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-build-vs-buy-considerations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Build vs. buy considerations
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#worked-example" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Worked example
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exercise" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Exercise
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -2010,8 +2209,187 @@
 
 
 <h1 id="04-integrating-ai-tools-into-existing-software-stacks">04 · Integrating AI Tools into Existing Software Stacks<a class="headerlink" href="#04-integrating-ai-tools-into-existing-software-stacks" title="Permanent link">&para;</a></h1>
-<p>This module is part of Level 3 · Advanced.</p>
-<p>More lessons are on the way — check back soon.</p>
+<p>Beyond using an AI tool through its own interface, teams often need it
+woven into existing systems — via APIs, plugins, or middleware. This
+module covers the architectural and operational considerations that differ
+from standalone tool use.</p>
+<h2 id="1-integration-patterns">1. Integration patterns<a class="headerlink" href="#1-integration-patterns" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Pattern</th>
+<th>Description</th>
+<th>Typical use</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Direct API call</td>
+<td>Your application calls the AI provider's API directly</td>
+<td>Custom features embedded in your own product</td>
+</tr>
+<tr>
+<td>Middleware/gateway</td>
+<td>Requests route through an internal layer that adds logging, rate limiting, and policy enforcement</td>
+<td>Organizations with multiple teams/apps needing consistent governance</td>
+</tr>
+<tr>
+<td>Plugin/extension</td>
+<td>A pre-built connector into an existing tool (IDE, CRM, docs platform)</td>
+<td>Fast adoption with limited customization</td>
+</tr>
+<tr>
+<td>Embedded vendor widget</td>
+<td>A vendor's AI feature embedded via iframe/SDK inside your product</td>
+<td>Fastest to ship, least control over behavior and data flow</td>
+</tr>
+</tbody>
+</table>
+<h2 id="2-architectural-considerations">2. Architectural considerations<a class="headerlink" href="#2-architectural-considerations" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Consideration</th>
+<th>Why it matters</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Latency budget</td>
+<td>AI calls are typically much slower than traditional API calls; design UX and timeouts accordingly</td>
+</tr>
+<tr>
+<td>Rate limits and quotas</td>
+<td>Provider-side limits can throttle your application under load; plan fallback behavior</td>
+</tr>
+<tr>
+<td>Error handling</td>
+<td>Model outputs can be malformed, refused, or low-confidence; the integration must handle all three gracefully</td>
+</tr>
+<tr>
+<td>Versioning</td>
+<td>Underlying models change over time; pin versions where reproducibility matters, and test before accepting auto-updates</td>
+</tr>
+<tr>
+<td>Observability</td>
+<td>Log inputs/outputs (respecting data policy) so failures are diagnosable, not just visible as "AI feature is being weird"</td>
+</tr>
+<tr>
+<td>Cost attribution</td>
+<td>Usage-based billing needs per-feature or per-team cost tracking, or costs become impossible to attribute later</td>
+</tr>
+</tbody>
+</table>
+<h2 id="3-a-gatewaymiddleware-checklist-for-larger-orgs">3. A gateway/middleware checklist for larger orgs<a class="headerlink" href="#3-a-gatewaymiddleware-checklist-for-larger-orgs" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Function</th>
+<th>Why centralize it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Policy enforcement (data classification checks)</td>
+<td>Consistent enforcement across every team's integration, not per-team discretion</td>
+</tr>
+<tr>
+<td>Centralized logging and audit trail</td>
+<td>Needed for the incident process and governance (Module 7)</td>
+</tr>
+<tr>
+<td>Rate limiting and cost caps</td>
+<td>Prevents one team's runaway usage from affecting shared budget or provider quotas</td>
+</tr>
+<tr>
+<td>Model/vendor abstraction</td>
+<td>Lets you swap providers later without every downstream team rewriting integration code</td>
+</tr>
+<tr>
+<td>Centralized key management</td>
+<td>Avoids scattering API credentials across many codebases with inconsistent security practices</td>
+</tr>
+</tbody>
+</table>
+<h2 id="4-common-integration-failure-modes">4. Common integration failure modes<a class="headerlink" href="#4-common-integration-failure-modes" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Failure</th>
+<th>Cause</th>
+<th>Fix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Silent degraded UX under provider outage</td>
+<td>No fallback path when the AI call fails or times out</td>
+<td>Design a graceful degradation (cached response, "unavailable" state, or non-AI fallback) for every AI-dependent feature</td>
+</tr>
+<tr>
+<td>Cost blowout</td>
+<td>Usage scaled with product growth without cost monitoring</td>
+<td>Build cost dashboards and caps before wide release, not after the first surprising invoice</td>
+</tr>
+<tr>
+<td>Untracked model drift</td>
+<td>Provider updates the underlying model; feature behavior changes without your team having decided that</td>
+<td>Pin model versions where behavior stability matters; test before opting into updates</td>
+</tr>
+<tr>
+<td>Data policy violation via integration</td>
+<td>An engineer's API call passes more context/fields than the approved use case</td>
+<td>Enforce field-level scoping at the integration layer, not just as a written guideline</td>
+</tr>
+</tbody>
+</table>
+<h2 id="5-build-vs-buy-considerations">5. Build vs. buy considerations<a class="headerlink" href="#5-build-vs-buy-considerations" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Factor</th>
+<th>Favors build (direct API/custom integration)</th>
+<th>Favors buy (plugin/vendor widget)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Customization need</td>
+<td>High — very specific workflow requirements</td>
+<td>Low — a standard use case a vendor already solves well</td>
+</tr>
+<tr>
+<td>Engineering capacity</td>
+<td>Available and it's a differentiating feature</td>
+<td>Limited, or this isn't a differentiating capability</td>
+</tr>
+<tr>
+<td>Time to value</td>
+<td>Can absorb weeks of integration work</td>
+<td>Needs to ship fast</td>
+</tr>
+<tr>
+<td>Long-term cost control</td>
+<td>Volume high enough that a direct integration pays off</td>
+<td>Volume too low to justify custom build/maintenance cost</td>
+</tr>
+</tbody>
+</table>
+<h2 id="worked-example">Worked example<a class="headerlink" href="#worked-example" title="Permanent link">&para;</a></h2>
+<p>A SaaS company wants an AI-powered search feature in their product. Direct
+API integration lets them control latency, cache common queries to reduce
+cost, and enforce that only public-facing product data (never customer
+account data) is sent to the model — via a middleware layer the platform
+team already runs for governance. They pin the model version after
+testing, set a per-team cost cap in the gateway, and build a fallback to
+traditional keyword search if the AI call times out, so a provider outage
+degrades the feature rather than breaking it.</p>
+<h2 id="exercise">Exercise<a class="headerlink" href="#exercise" title="Permanent link">&para;</a></h2>
+<p>Pick a feature or workflow where your team might integrate an AI tool
+directly into a software stack rather than using it via its own interface.
+Choose an integration pattern from section 1, and write out how you'd
+handle at least three of the architectural considerations in section 2
+(latency, error handling, and cost attribution, at minimum).</p>
 
 
 
