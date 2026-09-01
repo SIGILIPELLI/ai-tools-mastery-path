@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://sigilipelli.github.io/ai-tools-mastery-path/sitemap.xml
+Sitemap: https://sigilipelli.github.io/ai-tools-skillmastery/sitemap.xml

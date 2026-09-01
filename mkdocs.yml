@@ -1,8 +1,8 @@
 site_name: AI Tools Mastery Path
 site_description: A structured, module-wise training program on evaluating and using AI tools effectively -- entry level to master level, for individuals and teams.
-site_url: https://sigilipelli.github.io/ai-tools-mastery-path/
-repo_url: https://github.com/SIGILIPELLI/ai-tools-mastery-path
-repo_name: ai-tools-mastery-path
+site_url: https://sigilipelli.github.io/ai-tools-skillmastery/
+repo_url: https://github.com/SIGILIPELLI/ai-tools-skillmastery
+repo_name: ai-tools-skillmastery
 
 theme:
   name: material
