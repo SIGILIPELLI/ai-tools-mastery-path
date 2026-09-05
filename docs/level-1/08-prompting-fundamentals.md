@@ -67,6 +67,36 @@ fix: "same content, but more matter-of-fact, less apologetic." Three short
 prompts, each fixing one specific gap, got her a usable result faster than
 trying to write one perfect instruction upfront.
 
+## How It Actually Works
+
+Every element in the five-part framework works because it changes the
+literal input sequence the model conditions its next-token predictions on
+— there's no separate "intent recognition" stage that interprets what you
+*meant*; the model only ever sees the text of the prompt itself and
+predicts what plausibly follows it. This is why specificity and structure
+have an outsized, almost mechanical effect on output quality. A vague
+prompt like "write about dogs" sits in a huge, diffuse region of the
+model's learned probability space — many wildly different continuations
+are all roughly equally likely, so the output is generic almost by
+definition. A detailed prompt (audience, format, constraints, examples)
+narrows that region dramatically, because it makes many plausible
+continuations far *less* statistically likely than the few that satisfy all
+the stated constraints simultaneously.
+
+Providing examples ("few-shot prompting") works through the same mechanism
+as everything else — the model isn't "learning" in the sense of updating
+its weights; it's using the examples already sitting in its context window
+as extremely strong evidence about the pattern the *next* generated text
+should follow, the same way it uses everything else in the conversation.
+This is also why instructions placed at the very start or very end of a
+long prompt are often followed more reliably than ones buried in the
+middle — a widely observed property sometimes called "lost in the middle,"
+where a transformer's attention mechanism, despite in principle being able
+to weigh any position equally, empirically tends to attend more strongly to
+content near the boundaries of its context window. Structuring a prompt
+with the most important constraints first or last, rather than sandwiched
+in a long paragraph, is a direct, practical consequence of that mechanism.
+
 ## Exercise
 
 Pick a real task and write a deliberately underspecified first prompt (task

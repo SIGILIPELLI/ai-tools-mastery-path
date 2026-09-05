@@ -89,6 +89,39 @@ spreadsheet.
   a quick sanity check against two or three known data points before
   trusting the chart.
 
+## How It Actually Works
+
+The four-question framework works because it maps onto real technical
+differences in how these systems are built and deployed, not just marketing
+positioning. "How high are the stakes" tracks directly to a property called
+sampling temperature and post-training tuning: many products let a task run
+at a lower "temperature," which narrows the model's next-token probability
+distribution toward the single most likely continuation — more
+predictable, less creative, and (not coincidentally) generally more
+reliable for factual or high-stakes work. A "creative writing" mode and a
+"precise/factual" mode in the same product are frequently the same
+underlying model with this one parameter changed, plus a different system
+prompt.
+
+"Does it need to know about you/your data" tracks to context window and
+retrieval. A model has no persistent memory of your files by default — it
+only "knows" what's inside its fixed-size context window for that
+conversation, built from your prompt plus (if the tool supports it) chunks
+of your documents that a separate retrieval step pulled in because they
+matched your query. A tool that seems to "know your codebase" or "know your
+documents" is running retrieval-augmented generation: search first, then
+generation grounded in what was found — not a model that was actually
+trained on your private files.
+
+"Does it need to take an action, not just produce text" tracks to whether
+the product wires the model up to function calling / tool use: the model
+doesn't book a meeting or query a database itself — it emits a structured
+request (a JSON-shaped intent) that the application code recognizes,
+executes, and feeds the result back into the model's next turn. A tool that
+"only chats" versus one that "does things" is usually the same class of
+model; the difference is whether the surrounding application exposes it a
+menu of callable actions.
+
 ## Exercise
 
 Take three tasks from your Module 1 list. For each, run the four-question

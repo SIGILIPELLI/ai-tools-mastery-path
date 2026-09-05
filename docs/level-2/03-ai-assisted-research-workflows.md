@@ -63,6 +63,36 @@ supplied text, not memory. She spot-checks the table against the original
 pages before the meeting and catches one row where the AI merged two
 tiers incorrectly.
 
+## How It Actually Works
+
+The gap between "AI is strong here" and "AI is risky here" in the table
+above is really a gap in what data the model has direct access to at
+generation time. Summarizing a document you provide is strong because the
+correct information is sitting inside the model's context window — the
+generation task is fundamentally text-transformation (compress this,
+faithfully), which transformers handle well, not fact-recall from an
+internal, lossy compression of training data. Explaining an unfamiliar
+concept is *usually* strong for the same reason chat assistants generally
+work well for explanation (Module 1.3): well-established concepts appear
+consistently across huge amounts of training text, so the model's learned
+representation of them is dense and reliable.
+
+The risky end of the table is risky because it depends on recall from
+training data alone, without retrieval to ground it — and that recall is
+not a database lookup. A model's "knowledge" of a specific paper, statistic,
+or event is a diffuse statistical trace left by however many times
+(and however consistently) that fact appeared during training; a rare
+fact, a fact that changed after training data was collected, or a fact
+that was reported inconsistently across sources leaves a weak or
+contradictory trace, which the model resolves by generating the most
+*fluent* completion, not the most accurate one. Tools that visibly cite and
+quote from sources they actually searched are running retrieval-augmented
+generation — a separate search step supplies real, current text, and the
+model's job narrows to faithfully synthesizing what was found, which is a
+fundamentally more reliable task than recalling a fact unaided. Distinguishing
+which mode you're in — grounded retrieval vs. unaided recall — is the
+single most useful diagnostic for research work.
+
 ## Exercise
 
 Pick a question you genuinely need to answer. Run it through the four-stage

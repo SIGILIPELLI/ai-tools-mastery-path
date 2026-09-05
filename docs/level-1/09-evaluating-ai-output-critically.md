@@ -63,6 +63,36 @@ margin) against an outside industry source, and find the AI's number was
 noticeably out of date — an example of the staleness failure mode from
 section 1.
 
+## How It Actually Works
+
+Every failure mode in the table above traces back to one structural fact:
+a language model has no separate mechanism for verifying truth — it has
+only one mechanism, next-token prediction based on patterns learned from
+training data, applied identically whether the output happens to be
+correct or not. There is no internal "confidence check" that fires
+before a wrong statement is produced, because confidence, as expressed in
+the model's tone, is generated the same way every other word is: as
+whatever phrasing was statistically typical in similar contexts in the
+training data. Confident, authoritative-sounding writing is common in the
+training data for *correct* statements, so the model reproduces that same
+register for incorrect ones — it isn't lying or guessing sneakily, it
+simply has no internal signal that distinguishes "I derived this from solid
+evidence" from "this is the most fluent-sounding completion available."
+
+This is also why the same tool can be excellent at one task and unreliable
+at a superficially similar one: reliability tracks how well-represented
+and consistent a pattern was in training data plus how much of the
+necessary information is actually present in the current context window,
+not some general notion of "intelligence." Summarizing a document you
+pasted in is reliable because the correct answer is sitting directly in the
+input; answering "what happened in [recent event]" from memory alone is
+unreliable because it depends on the model's compressed, sometimes stale
+or sparse recollection of training data. Concretely, this means the
+single highest-leverage verification habit is checking whether a claim
+was *generated from what you gave the model* versus *recalled from
+training* — the former deserves real trust, the latter deserves the same
+skepticism you'd apply to an uncited claim from a stranger.
+
 ## Exercise
 
 Take one piece of AI output you've generated recently (or generate a new

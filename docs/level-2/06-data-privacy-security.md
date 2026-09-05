@@ -69,6 +69,37 @@ the salary with a placeholder range, drafts the generic structure with AI,
 and manually reinserts the specific figures into the final document
 herself — getting the drafting speedup without exposing regulated data.
 
+## How It Actually Works
+
+What "training on your data" technically means matters for evaluating this
+risk honestly. Training a model means adjusting the billions of numeric
+weights in its neural network so that, in aggregate across enormous amounts
+of text, its next-token predictions get statistically better. Your specific
+input, if included in a training run, becomes one of an enormous number of
+examples nudging those weights very slightly — it is not stored anywhere
+as a retrievable file, and in the overwhelming majority of cases could not
+be extracted verbatim afterward, because training compresses patterns
+across the whole dataset rather than memorizing individual documents.
+That said, memorization is not theoretically impossible: text that is
+highly repeated, distinctive, or appears with very little surrounding
+variation across a training corpus can occasionally be reproduced close to
+verbatim by a trained model — which is the real, if narrow, technical basis
+behind "could my data resurface" concerns, distinct from vaguer fears about
+the model somehow "remembering" everything it was ever shown.
+
+Separately, and more immediately relevant day to day, is inference-time
+data handling — what happens to a specific message the moment you send
+it, regardless of whether it's ever used for training. That message
+typically transits the vendor's servers, may be logged for abuse
+monitoring or debugging, and may be retained for some contractual period
+even where the vendor states "not used for training." This is a data
+handling and retention question, governed by a provider's terms of service
+and (where applicable) contractual agreements — not a fact about the
+model's architecture — which is exactly why a durable privacy habit
+("never paste this class of data into this class of tool") has to be
+based on what a vendor's contract actually commits to, not on the vendor's
+"how the AI works" marketing copy.
+
 ## Exercise
 
 Take a real piece of text you might otherwise paste into an AI tool.

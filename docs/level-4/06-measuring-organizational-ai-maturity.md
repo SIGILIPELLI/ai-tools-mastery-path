@@ -48,6 +48,37 @@ strong adoption score is making worse, not better. The next planning
 cycle prioritizes standing up the tiered governance model (Module 2)
 before investing further in adoption breadth.
 
+## How It Actually Works
+
+A maturity model that measures governance, training, and outcome
+tracking as separate dimensions (rather than a single "how much AI do we
+use" score) reflects a real fact about how these systems fail: risk and
+capability don't move together. An organization can have widespread, heavy
+tool usage (high on a naive adoption-volume metric) while still being
+governance-Level-1 and training-Level-1 — meaning nobody has mapped which
+use cases rely on unreliable unaided recall (Module 9), nobody has audited
+for aggregate bias effects (Module 5 of this level), and data may be
+flowing into tools whose contract terms were never reviewed (Module 3,
+Level 3). Heavy usage without maturity on the other dimensions isn't
+organizational AI success — mechanistically, it's exposure at scale,
+which is exactly why a maturity framework needs governance and outcome
+measurement as independent axes rather than collapsing everything into one
+adoption number.
+
+"Governance continuously refined against incident/outcome data," the
+highest maturity level in the table, matters because none of the risks
+this program has covered are fully preventable through upfront policy
+alone — confidently-wrong output (Module 9), aggregate bias (Module 5),
+and silent model version changes (Module 3) are all properties that only
+become visible through ongoing measurement of real outcomes, not
+one-time review at initial tool approval. An organization at the highest
+maturity level has built the feedback loop that catches these as they
+emerge — outcome audits, incident tracking, and a live channel for that
+data to actually update governance policy — rather than treating the
+initial approval and guideline-writing process as a one-time task that's
+"done" once completed, which is the structural difference this model is
+really measuring between its lower and higher levels.
+
 ## Exercise
 
 Score your own organization (or a plausible one) across the six section 1

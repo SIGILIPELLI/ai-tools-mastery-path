@@ -75,6 +75,37 @@ the $20 cost, so she keeps the subscription. She also notes the tool added
 no measurable value on her invoicing emails, so she stops using it for
 that task specifically rather than assuming it's worth using everywhere.
 
+## How It Actually Works
+
+Understanding how AI tools are actually priced explains several of the
+"often overlooked" costs in the table. Most providers meter usage in
+tokens — the same word-piece units the model predicts one at a time
+internally — and charge separately (usually at a lower rate) for tokens
+you send in versus tokens the model generates back, because generating
+each output token costs meaningfully more compute than reading an input
+token: input tokens are processed largely in parallel in one pass, while
+output tokens are produced one at a time, each new token requiring another
+full forward pass through the network conditioned on everything generated
+so far. This asymmetry is why usage-based pricing tiers input and output
+differently, and why tasks that produce long output (long-form drafting,
+extensive code generation) cost more per request than tasks with similar
+input length but short output (classification, yes/no answers) — a
+distinction worth knowing when estimating usage-based costs for a new
+workflow rather than pricing every request as if it were the same shape.
+
+The "hidden" costs in the table — verification time, workflow disruption,
+retraining — also trace back to mechanism rather than being generic
+"change is hard" friction. Verification time is structurally required, not
+optional caution, because (per Module 9) nothing in the generation process
+itself checks output against ground truth; that check has to happen
+somewhere, and if the tool doesn't do it, a human must. And retraining cost
+is real because effective prompting is a learned skill specific to how
+these models respond to structure and context (Module 8), not a
+transferable, tool-agnostic interface skill the way, say, learning one
+spreadsheet application transfers cleanly to another — which is exactly
+why switching tools has a real relearning cost worth weighing against
+whatever marginal capability gain motivated the switch.
+
 ## Exercise
 
 Pick one AI tool you currently pay for (or are considering). Using the

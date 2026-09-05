@@ -86,6 +86,40 @@ She now has five categories to research, not "which AI tool should I use"
 as an undifferentiated question — a much more tractable starting point than
 "an AI tool" as a single amorphous category.
 
+## How It Actually Works
+
+Almost every category in the table above — chat, coding, image, research,
+automation — is built on the same underlying mechanism: a large neural
+network trained to predict the next most likely chunk of a sequence, given
+everything that came before it. For text, that chunk is a "token" (roughly a
+word-piece); for image models, the analogous unit is a compressed patch of
+pixel data. The network itself is typically a transformer: a stack of layers
+where "attention" lets every position in the input look at every other
+position and weigh how relevant it is, which is what lets a model connect a
+pronoun on line 40 back to the noun it refers to on line 2.
+
+What makes categories feel so different in practice is not a different core
+mechanism but different training data and different scaffolding wrapped
+around that same prediction engine. A coding assistant is (roughly) the
+same kind of model as a chat assistant, trained with far more source code
+in its data and wired into an editor that feeds it file context and applies
+its output as a diff. An image generator swaps the token-prediction target
+for a diffusion process — starting from random noise and iteratively
+removing it in the direction a text description points — but the text
+understanding that steers that process is still done by a transformer-style
+model. Automation tools are often a thin orchestration layer: a trigger, a
+call out to one of these generative models for the "smart" step, and
+conventional code for everything else (moving data, calling APIs, writing to
+a spreadadsheet).
+
+Understanding this shared foundation explains two things that otherwise look
+mysterious: why *all* these tools share the same failure modes (confidently
+wrong answers, sensitivity to exact wording, no true understanding of truth
+vs. plausible-sounding text) regardless of category, and why a company can
+launch a "brand new" tool in a new category remarkably fast — they are
+usually not inventing a new mechanism, just pointing an existing
+architecture at new training data and a new interface.
+
 ## Exercise
 
 List every task in your own work or personal life where you've wondered

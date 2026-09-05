@@ -54,6 +54,38 @@ touching patient-adjacent data for the highest re-scoring frequency. The
 result is a document whose priorities are visibly derived from the actual
 assessed gaps, not a generic checklist.
 
+## How It Actually Works
+
+A capstone strategy document earns real credibility with leadership to
+the extent every section is grounded in the mechanism-level reasoning this
+program has built across all four levels, rather than in claims about
+specific current products. The strategic scope and guardrails section
+should be defensible using the durable, changes-slowly properties from
+Module 8 (structural strengths and weaknesses of the generation mechanism
+itself) rather than this quarter's capability announcements; the
+governance model should reflect the same reasoning as Module 2 — that
+approval decisions require both contract-level and mechanism-level
+literacy, not just product familiarity; the vendor risk section should
+carry forward Module 3's point that concentration and dependency risk have
+a real technical dimension (prompt and integration portability) beyond the
+purely contractual one.
+
+Presenting this to leadership as one coherent document, rather than a
+collection of separately-sourced module summaries, matters because the
+whole point of the capstone is demonstrating that these aren't independent
+policy choices bolted together — they're different organizational
+responses to the same small set of underlying mechanistic facts about how
+generative AI actually works: it generates fluent, plausible output with
+no internal truth-check; it inherits and can amplify patterns (including
+biased ones) from training data; its data-handling behavior is governed by
+contract and architecture, not by product marketing; and its reliability
+varies dramatically by task in ways that are predictable if you understand
+why, not random. A strategy that visibly reasons from these facts, rather
+than from a list of currently-fashionable AI initiatives, is the version
+of this deliverable actually built to survive contact with the next few
+years of change in this space — which is the entire premise the capstone,
+and this program, has been building toward.
+
 ## Exercise
 
 Write the full capstone strategy document for a real or plausible

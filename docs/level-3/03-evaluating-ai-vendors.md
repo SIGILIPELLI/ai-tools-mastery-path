@@ -69,6 +69,35 @@ the decision to the second vendor, and the company documents the rationale
 so a future team revisiting the choice understands why raw capability
 wasn't the deciding factor.
 
+## How It Actually Works
+
+A signed data processing agreement matters more than a vendor's public
+claims for a structural reason: what a model provider does with your
+data is governed entirely by contract and configuration, not by anything
+inherent in the underlying AI technology that would force one behavior or
+another. The same base model can be served under a consumer plan that logs
+requests and may use them for future training, or under an enterprise
+plan, at the same company, configured for zero data retention and a
+contractual no-training guarantee — the technology doesn't change between
+these; only the terms attached to a specific account do. This is why a
+vendor's marketing page ("we care about your privacy") carries no
+enforceable weight on its own — only the specific contract signed for your
+specific plan tier does, which is exactly what a DPA review is checking.
+
+Dependency and lock-in risk, further down a typical vendor-evaluation
+framework, has a technical dimension worth naming explicitly: prompts,
+templates, and integrations built against one vendor's API are not
+portable to another vendor's API without rework, because each provider
+defines its own request format, its own function-calling schema, and often
+subtly different model behavior even for superficially similar prompts.
+Two "equally capable" models can require differently-worded prompts to get
+comparable output, because each was trained and tuned on different data
+with different conventions baked into its instruction-following behavior.
+This means a switching-cost estimate in a vendor evaluation isn't just
+about contract termination fees — it includes real re-engineering and
+re-tuning work, which is a fair reason concentration risk deserves its own
+line item independent of the contract's exit clause.
+
 ## Exercise
 
 Pick a real or plausible AI vendor your team might adopt. Build the

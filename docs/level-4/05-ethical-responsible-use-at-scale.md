@@ -58,6 +58,37 @@ decisions were made by the tool alone, but the audit still triggers a
 retraining/adjustment of the tool's inputs and a review of past
 recommendations from that office.
 
+## How It Actually Works
+
+Aggregate bias amplification has a specific technical origin: a model's
+outputs reflect statistical patterns learned from its training data, and
+if that data contains historical patterns of bias (in hiring outcomes,
+in language associations, in whose writing was well-represented versus
+underrepresented), the model can reproduce or even amplify those patterns
+in its generated output, consistently and at volume, without any single
+output looking obviously wrong in isolation. A human reviewer evaluating
+one hiring-screen recommendation at a time has no way to see the aggregate
+pattern across thousands of decisions — the bias is only visible in the
+statistics of many outputs together, which is exactly why the module frames
+this as a systemic-effects problem invisible to any individual usage
+reviewer, and why detecting it requires deliberately auditing outcome
+patterns in aggregate rather than trusting spot-checks of individual
+results.
+
+This has a direct implication for how responsible-use policy has to be
+designed at scale: because bias here is a property of the training data's
+statistical patterns, not a bug isolated to one deployment, no amount of
+careful prompting or system-prompt tuning by an individual user can fully
+eliminate it — it can be reduced, and its downstream effects can be caught
+by deliberately measuring outcome distributions across protected
+categories, but the underlying tendency traces back to the training
+process itself. This is why credible organizational policy at scale pairs
+individual usage guidelines with structural, ongoing outcome-auditing
+specifically for any consequential, high-volume decision a model has any
+role in shaping — treating it as a monitoring and measurement problem
+requiring aggregate data, not a policy compliance problem solvable by a
+one-time guideline document alone.
+
 ## Exercise
 
 Take three AI-assisted decisions in use (or plausible) at your

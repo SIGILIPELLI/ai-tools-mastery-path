@@ -67,6 +67,37 @@ tool. It wins on two of five tasks but loses on data governance terms
 tasks rather than replacing the incumbent, avoiding a disruptive full
 migration for a partial improvement.
 
+## How It Actually Works
+
+The core tension in this module — under-tracking vs. over-tracking — is
+sharper for AI tools than for typical software because the underlying
+technology changes on two independent, frequently-updated axes at once,
+not one. A vendor can silently update the underlying model serving an
+existing product (a routine "quality improvement" with no version number a
+typical user would ever see), which can shift behavior, tone, or
+reliability on tasks you'd already calibrated trust for, without any
+visible product change to alert you. Separately, entirely new
+architectural capabilities occasionally arrive — more information fitting
+in a single context window, better retrieval integration, more reliable
+function-calling for agentic tool use — which can make a previously
+weak-fit tool category suddenly viable for a task it wasn't reliable for a
+year earlier. A tracking process aimed only at "did a competitor launch a
+flashier product" misses both of these, since neither necessarily comes
+with a splashy announcement.
+
+A sustainable process therefore benefits from distinguishing two different
+kinds of "current" worth tracking, mirroring the changes-quickly vs.
+stays-stable table from Module 1.1: tracking specific product and pricing
+changes needs only periodic, lightweight review, since that layer churns
+constantly and rarely invalidates your fundamental workflow design; but
+tracking underlying *capability* shifts — better context length, better
+grounding via retrieval, better agentic tool-use reliability — deserves
+closer attention, because a genuine capability shift is what actually
+justifies re-architecting a workflow (moving a task from "always verify
+manually" to "can now rely on a tool-use loop's self-check," for instance)
+rather than just swapping which vendor's logo appears in your workflow
+diagram.
+
 ## Exercise
 
 List the 2-3 sources you'd actually use for each row of the section 2

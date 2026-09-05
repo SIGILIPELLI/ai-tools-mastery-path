@@ -60,6 +60,35 @@ provider now represents an unacceptable single point of failure, leading
 to a deliberate diversification decision for the highest-criticality
 workflow.
 
+## How It Actually Works
+
+Concentration risk has a technical dimension beyond the contractual one:
+because prompts, integrations, and fine-tuned behavior are built against
+one vendor's specific API conventions and one specific model's
+particular response patterns (Module 3, Level 3), an organization with
+many workflows built on a single vendor has also accumulated a large body
+of vendor-specific engineering work that doesn't transfer cleanly if that
+vendor becomes unavailable, changes its pricing drastically, or
+deprecates the model version those workflows were tuned against. This
+compounds the more obvious business-continuity risk of single-vendor
+dependency — it's not just "we'd need to find a replacement vendor," it's
+"every prompt, integration, and staff habit built around this vendor's
+specific behavior needs re-engineering," which is a materially larger and
+slower undertaking than switching most other categories of SaaS vendor.
+
+Model deprecation and silent version changes — a risk category that's
+largely unique to this vendor category — deserve explicit ongoing
+monitoring because providers routinely retire older model versions or
+quietly update a "stable" endpoint's underlying weights as part of normal
+product maintenance, and either event can change output behavior on
+workflows that were validated and approved against a specific version's
+characteristics. A vendor risk framework built for conventional software
+(where the underlying logic mostly only changes via an explicit, versioned
+release you opt into) misses this category of risk entirely unless
+adapted for it — which is exactly the adaptation "advanced" vendor risk
+management for AI tools, as distinct from generic vendor risk management,
+actually has to add.
+
 ## Exercise
 
 Build a vendor risk register (section 3 template) for 3-5 real or

@@ -66,6 +66,34 @@ quarterly review. They pair the data-handling rule with two concrete
 examples — one compliant, one not — because the first draft's abstract
 wording had been ambiguous to several team members in testing.
 
+## How It Actually Works
+
+A guideline document earns its keep by translating mechanism into policy
+in places where mechanism alone would leave every employee guessing. "Which
+tools are approved, for which purposes" exists because different vendor
+plans (Module 1) carry genuinely different data-handling contracts even
+when running comparable underlying models — an employee cannot tell from
+the product's interface alone whether their specific account tier has a
+data processing agreement or a training opt-out; that information lives in
+a contract IT or legal reviewed, not in anything visible inside the chat
+window. A guideline that names approved tools *and tiers* is substituting
+institutional knowledge of the contract for information the tool itself
+can't surface.
+
+Guidelines that specify *what kind of data* may be pasted in are doing
+similar translation work for a mechanistic reason covered in Module 6: once
+text is sent to a model provider's API, it typically transits and is
+logged on that provider's infrastructure regardless of whether it's later
+used for training — an irreversible-in-practice disclosure the moment
+"send" is pressed, not something a later "undo" or "delete my chat" can
+fully claw back if a log was already retained under the provider's terms.
+A clear, specific data-classification rule (this category is fine, this
+category is not) substitutes a firm bright line for a judgment call that,
+left to be made ad hoc by each employee under time pressure, will
+predictably be made wrong by someone eventually — which is the whole
+reason this kind of policy is written down rather than left as tacit
+organizational common sense.
+
 ## Exercise
 
 Draft a one-page AI tool guideline for a team you're part of (or a

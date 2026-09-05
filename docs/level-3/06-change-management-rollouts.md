@@ -66,6 +66,34 @@ publicly adjusts the guidance to exclude that report type rather than
 insisting adoption continue there, which visibly builds trust for the
 rest of the rollout.
 
+## How It Actually Works
+
+Resistance to AI rollouts runs unusually high partly because the
+technology's actual failure mode — confident, fluent, occasionally wrong
+output with no visible signal distinguishing reliable from unreliable
+claims (Module 9) — is genuinely harder to build calibrated trust in than
+a typical software change. A new spreadsheet tool or CRM either works
+correctly or visibly breaks; a generative AI tool "works" in the sense of
+producing plausible output on every single use, whether or not that output
+is actually correct, which means the normal human learning process of
+"try it, see if it obviously fails, adjust trust accordingly" doesn't
+function the way it does for deterministic software — an employee can use
+the tool successfully many times before encountering the kind of subtle,
+confidently-wrong output that would recalibrate their trust downward, or
+conversely can be burned once early on and never adjust their skepticism
+back up even as the tool proves reliable for other tasks.
+
+This has a direct, practical implication for rollout design: because trust
+calibration doesn't happen automatically the way it does with deterministic
+tools, a rollout has to build it deliberately, through structured training
+that shows *specifically* which tasks are reliable and which need
+verification (grounded in the same distinctions this program has been
+drawing all along), rather than assuming exposure and time alone will
+produce well-calibrated adoption. A rollout that skips this and just
+grants access tends to bifurcate a team into over-trusters and
+under-trusters (Module 9) rather than producing the appropriately
+skeptical, task-aware middle group a good rollout is actually aiming for.
+
 ## Exercise
 
 For an AI tool rollout you're involved in (or a plausible one), write a

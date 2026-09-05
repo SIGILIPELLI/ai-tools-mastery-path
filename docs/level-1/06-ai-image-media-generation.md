@@ -71,6 +71,39 @@ listens for anything that sounds too close to an existing recognizable
 tune (a real risk with music generation), and picks a different generation
 when in doubt rather than risking an inadvertent resemblance.
 
+## How It Actually Works
+
+Image generation tools work fundamentally differently from the
+text-prediction models covered in earlier modules, even though a
+text-understanding transformer is doing the prompt interpretation. The
+dominant mechanism is diffusion: during training, the model is shown images
+with progressively more random noise added to them, and learns to predict
+and remove that noise step by step to recover the original. At generation
+time, the process runs in reverse from *pure* noise: starting from a canvas
+of random static, the model repeatedly asks "given this noisy image and
+this text prompt, what would slightly-less-noisy version look like," and
+after dozens of these denoising steps, a coherent image emerges. Your text
+prompt doesn't get "drawn" directly — it steers each denoising step toward
+regions of image-space that a joint text-image model has learned correspond
+to that description.
+
+This explains several well-known quirks. Prompt wording matters
+disproportionately because the model is matching your description against
+statistical associations learned from captioned training images, not
+parsing your prompt as a literal specification — a word order or synonym
+swap can shift which learned associations get activated most strongly.
+Recurring anatomical errors (hands, text within images, reflections) happen
+because those elements require modeling the same object consistently across
+many spatially separate patches during the denoising process — the model
+has no built-in symbolic understanding that "a hand has five fingers," only
+statistical patterns about what hand-*shaped* regions usually look like,
+learned less reliably than large, simple, frequently-photographed subjects.
+And because training data is scraped from vast collections of existing
+images, generated output can reproduce stylistic patterns — or, at times,
+recognizable elements — from that data, which is the technical root of the
+ethical and copyright considerations any responsible use of these tools has
+to weigh.
+
 ## Exercise
 
 Using any image generation tool available to you, write a prompt following

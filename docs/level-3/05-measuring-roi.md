@@ -66,6 +66,34 @@ binding constraint. The team invests in more training (Module 8) rather
 than concluding the tool doesn't work, and re-measures the following
 quarter with adoption tracked explicitly.
 
+## How It Actually Works
+
+Aggregate time saved diverging from a simple per-person multiplication has
+a mechanistic root, not just an organizational one: because output quality
+depends heavily on prompt specificity and structure (Module 1.8), the same
+tool produces meaningfully different time savings for a team member who's
+learned to write well-structured, specific prompts versus one who hasn't —
+the tool's raw capability is identical across both users, but the *usable*
+output each gets back differs enough that "time saved" is really measuring
+a combination of tool capability and individual prompting skill, which is
+exactly why adoption is rarely uniform even when everyone has the same
+access.
+
+The other major reason team-scale ROI resists simple time-saved math is
+that generation quality is stochastic and task-dependent rather than a
+fixed multiplier applied uniformly to all work: a task well inside the
+model's reliable zone (transforming supplied text, code that gets tested
+before merging) genuinely saves close to the naive estimate, while a task
+that leans on unaided recall or produces confident-but-wrong output that
+someone downstream trusted without checking can create *negative* ROI —
+rework plus the cost of the error — that a simple "hours saved per week"
+survey will never surface, because the person who used the tool
+experienced it as fast and easy in the moment, and the cost only appears
+later, elsewhere, when the error is caught (or isn't). This is why credible
+ROI measurement has to track outcome quality, not just self-reported time
+saved, and why it should segment by task type rather than averaging
+across a team's whole varied workload.
+
 ## Exercise
 
 Design a team-scale ROI measurement plan for an AI tool your team uses or

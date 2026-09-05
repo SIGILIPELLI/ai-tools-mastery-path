@@ -54,6 +54,36 @@ a defined 60-day review checkpoint and a stated rollback trigger (false
 positive rate above 15%). The proposal is approved on the first pass
 because every claim in it is checkable.
 
+## How It Actually Works
+
+A credible adoption proposal has to do something most casual tool
+recommendations skip entirely: translate the mechanism-level distinctions
+built across this whole level (grounded vs. recalled output, contract-level
+data handling vs. marketing claims, structural drivers of ROI variance)
+into a decision a non-technical stakeholder can evaluate and sign off on
+without needing to understand transformer architecture. The "problem
+statement" and "tool comparison" sections do this by anchoring the
+recommendation in the *task's* mechanistic profile from Module 10 of
+Level 2 — is this task well inside the model's reliable zone, does it need
+retrieval or human verification, does the chosen vendor's contract actually
+cover the data this task will touch — rather than in an abstract, unverifiable
+claim about the recommended tool being "the best AI tool available,"
+which is exactly the kind of claim a skeptical decision-maker should
+(correctly) discount, since "best" changes by the tool refresh cycle while
+task-fit and contract terms don't.
+
+The risk and mitigation section carries similar weight for a structural
+reason: because nothing in the generation mechanism itself distinguishes a
+well-supported output from a plausible-sounding one (Module 9, carried
+through this whole level), every adoption proposal is implicitly asking an
+organization to accept some rate of confidently-wrong output somewhere in
+the new workflow — the proposal's job is to name specifically where that
+risk concentrates (which steps rely on unaided recall vs. supplied data),
+and what concrete check catches it before it reaches a customer or a
+decision, rather than leaving "we'll be careful" as an implicit,
+unstated assumption a decision-maker would otherwise have no way to
+evaluate or hold you to.
+
 ## Exercise
 
 Write a full adoption proposal for a real or plausible AI tool for your

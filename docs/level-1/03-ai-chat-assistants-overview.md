@@ -71,6 +71,36 @@ because a specific factual detail like a publication date is exactly the
 kind of claim that's cheap for the assistant to get wrong and cheap for her
 to verify directly.
 
+## How It Actually Works
+
+A chat assistant's core loop is simpler than the polished interface
+suggests: your message, plus the entire visible conversation history, plus
+a hidden "system prompt" set by the provider (instructions about tone,
+safety behavior, and formatting) are concatenated into one long sequence and
+fed to the model, which then generates a reply one token at a time —
+sampling each next token from a probability distribution over its
+vocabulary, appending it, and repeating until it produces a stop signal or
+hits a length limit. There is no separate "understanding" step that happens
+before generation starts; understanding and generation are the same
+forward pass through the network.
+
+This explains several behaviors users notice. Long conversations can
+"forget" early details or contradict themselves, because once the
+conversation exceeds the model's context window, the oldest turns are
+truncated or summarized away — they leave the sequence the model can
+actually see. Assistants can be steered mid-conversation ("be more concise,"
+"stop using bullet points") because that instruction becomes part of the
+sequence future replies are conditioned on, not because anything about the
+model itself changed. And the well-known tendency to state incorrect facts
+fluently and confidently — "hallucination" — follows directly from the
+mechanism: the model is optimized to produce the statistically likely next
+token given its training data and the conversation so far, not to check
+each claim against a ground truth. When a hedge like "I'm not sure" is less
+statistically probable in that context than confident phrasing, the model
+has no built-in mechanism forcing it to hedge anyway; some products bolt on
+a separate fact-checking or retrieval pass specifically to counteract this,
+but the base generation process has no truth-checker inside it.
+
 ## Exercise
 
 Pick a chat assistant you have access to (any one). Ask it three questions

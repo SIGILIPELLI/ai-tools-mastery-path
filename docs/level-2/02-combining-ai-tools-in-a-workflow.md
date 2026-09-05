@@ -51,6 +51,33 @@ then formats the approved copy into the email template and schedules the
 send. Each tool does the part it's strongest at, and the one verification
 checkpoint sits exactly where an uncaught error would do the most damage.
 
+## How It Actually Works
+
+Chaining tools works because it exploits a real, structural property of
+these systems: a model's reliability on a given sub-task tracks how well
+that sub-task matches what dominated its training and tuning, and every
+product optimizes those choices differently. A research tool wired up to
+live web retrieval is architecturally built to ground its output in
+fetched documents before generating; a writing tool with no such retrieval
+step is architecturally built only to transform text already given to it.
+Asking one tool to do both jobs at once doesn't just risk lower quality —
+it forces a single model instance to implicitly switch between two
+different reliability regimes (grounded-in-retrieved-fact vs.
+pattern-matched-from-training) within one continuous generation, with
+nothing forcing a clean handoff between them.
+
+Chaining also creates natural checkpoints for a structural reason: each
+tool's output becomes the *next* tool's input, which is to say each
+handoff is a fresh, bounded context window that a human can inspect before
+it's consumed by the next stage. This is meaningfully different from a
+single long conversation with one tool, where an early undetected error
+sits inside the context and can silently distort every subsequent turn,
+because the model conditions each new response on its own prior output as
+much as on your instructions — a phenomenon sometimes called
+self-reinforcement or drift. Breaking a task into a shorter pipeline with
+human review between named stages interrupts that drift at defined points
+instead of letting it compound invisibly across one long session.
+
 ## Exercise
 
 Take a multi-step task you do regularly (a report, a content piece, a data

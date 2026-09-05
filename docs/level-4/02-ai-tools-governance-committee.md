@@ -59,6 +59,35 @@ quarter, and shadow adoption — measured via a follow-up inventory —
 drops sharply because the sanctioned path is now faster than going around
 it.
 
+## How It Actually Works
+
+Security/IT's seat on the committee exists because data-handling risk is
+determined by account-tier contract terms and system architecture — where
+requests are logged, whether retention is configurable, whether a
+retrieval pipeline touches a sensitive internal document store — details
+that are invisible from inside a product's user interface and only
+assessable by someone who reviews the actual technical integration and
+contract (Module 3, Level 3). Legal/compliance's seat exists for the
+adjacent but distinct reason that a signed DPA is the only enforceable
+constraint on what a vendor actually does with submitted data (Module 3
+again) — a committee without either seat is approving tools based on
+product demos and marketing claims, neither of which carries any
+contractual or technical weight.
+
+A less obvious but equally important seat is someone who understands the
+mechanism well enough to evaluate whether a proposed use case sits in the
+technology's reliable zone or its unreliable one — grounded generation
+from supplied data versus unaided recall, a well-represented task versus a
+rare edge case, a use case with a built-in verification loop (agentic
+tool-use checking its own output against real feedback) versus one with
+no check at all. Without this kind of technical literacy on the
+committee, approval decisions default to evaluating tools by vendor
+reputation or feature-list marketing rather than by the actual structural
+risk of the specific use case being proposed — which is precisely the
+gap this whole program has been building the vocabulary to close, and
+exactly the gap a governance committee lacking that literacy will
+predictably fall into.
+
 ## Exercise
 
 Design a governance committee charter for a real or plausible

@@ -61,6 +61,34 @@ quarters, duplicate training material production stops, and the
 governance committee's repeat-question volume drops as the CoE's playbooks
 answer them proactively.
 
+## How It Actually Works
+
+A CoE is warranted specifically when the prompting-technique and
+templating problem described in Module 4 of this level ("scaling
+adoption") has outgrown what any one champion or team can absorb alone:
+multiple teams independently rediscovering the same effective prompt
+structures, the same retrieval-integration patterns, or the same
+verification workflows is a sign that valuable, reusable technical
+knowledge is being duplicated rather than shared — a coordination failure
+a CoE exists to fix by centralizing that knowledge capture once instead of
+letting it happen redundantly, team by team. This is a genuinely different
+problem from "not enough people have access to tools," which a CoE alone
+doesn't solve — access is a licensing and governance question (Modules 2
+and 3 of this level), while a CoE's core value is turning tacit,
+individually-held technique into shared, documented organizational
+capability.
+
+A CoE's ongoing technical-currency function also matters mechanically: as
+Module 9 of Level 3 covered, underlying model capabilities shift on a
+different, often faster cadence than product branding suggests (better
+context windows, better retrieval integration, more reliable agentic
+tool-use), and a CoE positioned to track that shift can proactively
+identify when a previously-unreliable use case (say, one that depended on
+unaided recall) becomes viable via a newer capability (retrieval grounding,
+better verification loops) — translating a capability shift into an
+updated internal best practice faster than it would otherwise propagate
+through an organization via ad hoc individual discovery.
+
 ## Exercise
 
 Using the section 1 signals, assess whether a CoE is currently warranted

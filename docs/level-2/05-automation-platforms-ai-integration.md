@@ -67,6 +67,36 @@ workflow so AI drafts always land in an agent's queue for one-click
 approval rather than auto-sending — keeping the speed benefit of
 drafting while removing the risk of unreviewed sends.
 
+## How It Actually Works
+
+An "AI step" inside an automation platform is, mechanically, an API call:
+the platform packages up whatever data triggered the workflow (an incoming
+email's text, a new spreadsheet row, a form submission) into a prompt,
+sends it to a language model's API, and receives back generated text or a
+structured function-call request, which the platform then routes into the
+next step of the workflow — a database write, a Slack message, a
+conditional branch. The "AI" isn't running continuously inside the
+automation; it's invoked once per relevant event, statelessly, exactly like
+any other API call the automation makes to any other service, except this
+particular service's output is probabilistic text generation rather than
+a deterministic lookup.
+
+That statelessness matters for reliability design. Each invocation only
+"knows" what's packaged into that one prompt — it has no memory of prior
+runs of the automation unless the platform explicitly stores and re-feeds
+that history, and it has no awareness of the automation's overall business
+logic beyond what's described in its prompt. This is why well-built
+AI-in-automation steps constrain the model's output to a structured format
+(a fixed set of category labels, a JSON schema, a menu of allowed
+actions via function calling) rather than free text: constrained output
+gives the deterministic code downstream something reliable to branch on,
+whereas free text output would require yet another layer of parsing (often
+itself another model call) to turn into something the workflow can act on.
+Classification and extraction steps — sorting an email into a category,
+pulling a date out of a message — are common precisely because they map
+cleanly onto this pattern: narrow, well-defined output that plain code can
+consume directly.
+
 ## Exercise
 
 Take one recurring manual task you or your team does with an automation

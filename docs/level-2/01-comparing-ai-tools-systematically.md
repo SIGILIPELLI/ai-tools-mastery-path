@@ -59,6 +59,35 @@ Tool B for routine work and keeps Tool A for the small number of
 high-stakes, quality-critical projects — a split decision the ad-hoc
 approach would never have surfaced.
 
+## How It Actually Works
+
+Systematic comparison works better than vibes-based comparison because it
+targets the actual sources of variance between AI products, most of which
+have nothing to do with one vendor having a "smarter" model in some
+abstract sense. Two products can use models of genuinely different
+capability (different parameter counts, different training data cutoffs,
+different amounts of compute spent on training and inference) — but they
+can *also* produce very different results while using very similar
+underlying models, because of differences in system prompt engineering
+(the hidden instructions shaping tone and behavior), the amount and quality
+of retrieval feeding real context into the model, fine-tuning on
+domain-specific data, and simple sampling settings like temperature.
+
+A rigorous test protocol matters mechanically because these models are
+stochastic: the same prompt sent twice to the same model, at nonzero
+temperature, samples from a probability distribution and can produce two
+different outputs — sometimes both reasonable, occasionally one much
+worse. A single anecdotal test run therefore measures one draw from a
+distribution, not the tool's typical behavior; a comparison across several
+prompts and a couple of repeats per prompt approximates the actual
+distribution well enough to draw a fair conclusion, while a single "it
+got this one wrong" or "it got this one right" observation mostly measures
+noise. This is also why a documented protocol — the same prompts, run the
+same way, across candidate tools — controls for the biggest confound in
+casual comparisons: giving Tool A a favorable prompt and Tool B a
+harder one without realizing it, then attributing the resulting gap to
+tool quality rather than prompt design.
+
 ## Exercise
 
 Pick two AI tools that could plausibly serve the same purpose in your own

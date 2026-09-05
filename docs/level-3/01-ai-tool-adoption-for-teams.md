@@ -65,6 +65,37 @@ poorly for the team's more idiosyncratic internal framework. She rolls out
 with explicit guidance on where it helps most, rather than a blanket
 "use it for everything" mandate.
 
+## How It Actually Works
+
+Several of the differences the table draws between individual and team
+adoption stem from a mechanical fact about how most AI products are
+licensed and configured: an individual subscription is a single account
+with the vendor's default data-handling terms, while an organizational
+deployment typically runs through a different plan or API tier that
+carries a distinct contract, different default retention settings, and
+often options individual plans don't expose at all — like a data
+processing agreement, admin-controlled retention windows, or an option to
+route requests through a "zero data retention" endpoint that the vendor
+contractually commits not to log or use for training. An individual
+signing up for the consumer product and a team's IT department provisioning
+enterprise seats are not using "the same tool" in any legally or
+operationally meaningful sense, even when the underlying model serving
+both plans is identical — this is precisely why Module 2's internal
+guidelines and Module 7's data governance work exist as separate,
+necessary layers on top of individual tool competence.
+
+The "shared, explicit policy" row also reflects something structural about
+how these tools behave at the edges: because output is generated from
+learned patterns rather than fixed rules, two people on the same team,
+using the same tool for the same kind of task, can get meaningfully
+different guidance from it depending on exactly how they phrase their
+prompt — there's no single canonical "the tool's answer" to appeal to when
+disagreements arise. A written team policy substitutes for that missing
+canonical answer: it's the team's own explicit decision about acceptable
+use, filling a gap the tool's own behavior can't reliably fill on its own
+because the tool's output is inherently variable prompt to prompt and
+person to person.
+
 ## Exercise
 
 Design a two-to-four-week pilot for introducing (or re-evaluating) one AI

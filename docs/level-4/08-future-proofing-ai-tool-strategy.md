@@ -61,6 +61,37 @@ classification and risk tier, with vendor names living only in the
 separate, easily updated risk register (Module 3). The next vendor change,
 a year later, requires only a risk-register update, not a policy rewrite.
 
+## How It Actually Works
+
+The changes-quickly/changes-slowly split in this module's table holds up
+because it tracks a real architectural distinction: specific vendors,
+specific model versions, and specific pricing are all *implementation*
+details sitting on top of a much more stable set of mechanisms — the
+transformer-based generation process, its structural strengths (text
+transformation grounded in supplied data, pattern-matching over
+well-represented tasks) and its structural weaknesses (no built-in
+truth-verification, sensitivity to training data biases, sequential,
+latency-bearing token generation). A strategy built around "we use Vendor
+X's Model Y" is betting on an implementation detail with a shelf life
+measured in months; a strategy built around "our workflows account for the
+technology's mechanistic strengths and weaknesses, and place verification
+where the mechanism can't provide it" is betting on properties that have
+held steady since well before this program's Level 1 and show no sign of
+disappearing with the next model generation.
+
+This is precisely why "the need for human accountability on consequential
+decisions" belongs in the changes-slowly column rather than the
+changes-quickly one: it isn't a stopgap measure that better models will
+eventually make unnecessary — it's a structural consequence of a
+mechanism, next-token prediction with no internal truth-check, that
+improving model quality makes more *fluent* and convincing without
+addressing the underlying architectural gap at all. A future-proof
+strategy plans for that gap persisting indefinitely across model
+generations, and designs verification and accountability structures
+accordingly, rather than provisionally, on the assumption that "the next
+version will finally fix hallucination" — which is a bet this program's
+own Level 1 material already gives good reason to be skeptical of.
+
 ## Exercise
 
 Review a real or plausible AI tool policy document. Identify any language

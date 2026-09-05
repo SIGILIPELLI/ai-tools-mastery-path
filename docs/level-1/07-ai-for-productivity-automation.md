@@ -73,6 +73,38 @@ automation to post directly and unreviewed. That single review step
 preserves most of the time savings while catching the failure mode that
 actually showed up.
 
+## How It Actually Works
+
+Most "AI automation" is not a single AI system doing everything — it's
+conventional software plumbing (a scheduler, a webhook listener, an API
+call to a calendar or inbox) with a generative model inserted at exactly
+the step that needs language understanding or production. A meeting
+summarizer, for instance, is typically three separate systems chained
+together: a speech-to-text model (itself a different kind of neural
+network, trained to map audio waveforms to text tokens) transcribes the
+recording; the resulting transcript is then fed as input to a chat-style
+model, which condenses it using the same next-token generation described in
+Module 3; and finally, conventional code takes that generated summary and
+posts it to wherever the automation is configured to deliver it. Each stage
+can introduce its own errors — a mistranscribed name compounds into a wrong
+summary — which is why "the AI got a fact wrong" in one of these pipelines
+is often actually "the transcription stage misheard a word, and the
+summarization stage faithfully summarized the error."
+
+The "triggering actions automatically" sub-category works through function
+calling: the language model is given a fixed menu of available actions
+(described to it as structured definitions, not natural language) and,
+instead of only producing conversational text, it can output a
+machine-readable request naming one of those actions and its parameters.
+The automation platform's own code — not the model — validates that
+request and actually executes it (sending the email, updating the row,
+calling the API). This division of labor matters for reliability: the
+model decides *what* to do based on pattern-matching over the situation
+described to it, but a well-built automation still has deterministic code
+checking *whether* that action is safe and well-formed before it runs,
+which is exactly the gap that causes trouble when a platform skips that
+check.
+
 ## Exercise
 
 Identify one recurring task in your week that feels like a candidate for

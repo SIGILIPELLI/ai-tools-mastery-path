@@ -74,6 +74,37 @@ becomes the forcing function for publishing the classification table in
 section 2 company-wide, plus provisioning an enterprise tier with no-train
 terms for the whole team.
 
+## How It Actually Works
+
+Mapping input data flows matters mechanically because, as covered in
+Module 6, anything sent to a model provider's API generally transits and
+may be logged on that provider's infrastructure the moment it's
+submitted — this is a property of how these services are architected (a
+remote API call, not local processing) rather than a configurable setting
+most end users can see or control from inside a chat interface. A
+governance model that only reviews *which tools* are approved but doesn't
+map *what data classes* realistically flow into them at the point of use
+(customer PII typed into a support-response drafting tool, proprietary
+code pasted into a public coding assistant for a quick fix) is auditing
+the wrong layer — approval happens at the vendor-contract level, but real
+exposure happens at the individual-request level, and those two levels can
+diverge badly without a deliberate flow-mapping exercise like the one this
+module describes.
+
+Output flows deserve equal scrutiny for a related but distinct reason:
+generated content can encode patterns from a model's training data in ways
+that are not always obvious from the output alone — a generated image can
+echo stylistic elements of training images (Module 1.6), and generated
+text can reproduce phrasing patterns statistically common in training
+data without any explicit citation marking that connection, which is
+exactly why governance frameworks generally require a human review step
+before AI-generated content is published externally, distinct from (and in
+addition to) checking that its factual claims are accurate. The
+"accountable for what comes back out" framing in the module's intro is
+really pointing at this: because nothing in the generation mechanism itself
+tracks provenance for you, an organization's accountability structure has
+to supply the check the technology doesn't provide on its own.
+
 ## Exercise
 
 Take a real (or realistic) dataset your team works with. Classify it using

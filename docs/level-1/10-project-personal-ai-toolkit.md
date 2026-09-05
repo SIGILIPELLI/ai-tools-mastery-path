@@ -90,6 +90,33 @@ A small-business owner's filled excerpt:
   use an AI tool to generate final numbers for her tax filing without a
   human accountant's review.
 
+## How It Actually Works
+
+Choosing tools by category rather than by brand — the approach this
+project asks you to formalize in writing — holds up well precisely because
+category maps to underlying mechanism, and mechanism is what actually
+determines a tool's strengths and blind spots. A "writing assistant" and
+a "research assistant" might be running the exact same base model under
+the hood, wrapped in different system prompts, different default
+temperature settings, and different amounts of retrieval — but knowing
+*that* is what tells you where each is trustworthy without re-testing
+every tool from scratch. Your toolkit document is, in effect, a personal
+map of which mechanism you're relying on for which task: pure generation
+from training data (treat with skepticism), generation grounded in
+something you supplied (trust much more, but still check), or generation
+plus a tool-use loop that checked its own work against real output (trust
+proportionally to how much of the work that loop actually verified).
+
+Writing this down matters because these underlying mechanisms are far more
+stable than the branded products sitting on top of them. A product you
+chose can be discontinued, repriced, or have its system prompt changed
+overnight by its provider — but the reasoning "I trust this category of
+tool for grounded tasks and verify anything it recalls from memory alone"
+survives every one of those changes, because it's a statement about how the
+technology works, not about which vendor currently implements it best. That
+durability is the entire point of building the toolkit as a document with
+reasoning attached, rather than as a bare list of app names.
+
 ## Exercise (the deliverable)
 
 Fill out all five sections of the template above completely, using your own

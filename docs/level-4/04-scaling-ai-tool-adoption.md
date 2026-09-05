@@ -60,6 +60,37 @@ champion only handling a handful of escalations. That result becomes the
 gate to a company-wide rollout, tracked centrally against the same
 adoption and ROI metrics used in the original pilot.
 
+## How It Actually Works
+
+Manual, champion-led onboarding breaks at scale for a reason directly
+tied to the prompting-skill gap named earlier in this program (Module 8,
+Module 8 of Level 3): the difference between mediocre and excellent output
+from the same tool is largely a function of learned prompting technique,
+and that technique doesn't transfer through casual observation the way,
+say, watching a colleague use a spreadsheet feature does — a champion
+demonstrating a well-crafted prompt is showing the *result* of technique
+built through their own iteration, not something a bystander can reliably
+reverse-engineer and reproduce from a single observed example. One
+champion's expertise genuinely doesn't scale past the handful of people
+they can directly, repeatedly coach, which is why ad hoc training produces
+such inconsistent skill levels across a larger organization — it was never
+a delivery-capacity problem alone, it's that the skill itself resists the
+informal transmission methods that work fine for more mechanical software
+skills.
+
+Scaling successfully therefore usually requires converting tacit,
+champion-held prompting expertise into the kind of reusable, saved
+templates described in Module 8 of Level 2 — artifacts that encode the
+structure and constraints a good prompt needs, distributable at
+organizational scale in a way a champion's individual coaching time cannot
+be. This reframes "scaling adoption" as substantially a knowledge-capture
+and templating problem, not purely a training-logistics or tooling-access
+problem — the organizations that scale AI adoption well are usually the
+ones that treat effective prompts and workflows as documentable,
+versionable organizational assets, rather than leaving them as
+undocumented individual skill scattered across whichever employees happen
+to have picked it up.
+
 ## Exercise
 
 Take a tool your team has already adopted successfully (real or

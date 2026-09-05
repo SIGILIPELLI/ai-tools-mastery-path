@@ -64,6 +64,38 @@ testing, set a per-team cost cap in the gateway, and build a fallback to
 traditional keyword search if the AI call times out, so a provider outage
 degrades the feature rather than breaking it.
 
+## How It Actually Works
+
+Each integration pattern in the table represents a different way of
+routing the same underlying request-response mechanism — a prompt in, a
+generated token stream out — through your system's architecture, and the
+pattern you choose determines where latency, cost, and failure risk
+actually land. A direct API call means your own backend code assembles the
+prompt (often combining a system prompt, retrieved context, and user input)
+and is directly on the hook for handling the response, including the very
+real possibility that generation takes several seconds, since output
+tokens are produced sequentially, one full forward pass at a time, not
+delivered instantly the way a database query result usually is. This is
+why direct integrations commonly stream the response token-by-token to the
+user interface rather than waiting for the full reply — it's not
+cosmetic; it hides latency that is a structural property of
+autoregressive generation, not a fixable performance bug.
+
+Retrieval-augmented patterns — where your system searches an internal
+document or knowledge store and injects the results into the prompt before
+calling the model — add a whole separate technical layer beneath the
+model call: documents are typically pre-processed into embeddings (numeric
+vectors capturing semantic meaning) and stored in a vector database, and a
+query gets converted to the same kind of vector and compared for similarity
+to find the most relevant chunks. The quality of everything downstream —
+how grounded and accurate the model's answer is — depends heavily on this
+retrieval step working well, independent of which model you call
+afterward; a poor chunking or embedding strategy will produce weak answers
+even from an excellent model, which is why integration architecture
+decisions (chunk size, retrieval quality, how much retrieved context fits
+in the prompt) often matter more to end-to-end quality than the choice of
+model itself.
+
 ## Exercise
 
 Pick a feature or workflow where your team might integrate an AI tool

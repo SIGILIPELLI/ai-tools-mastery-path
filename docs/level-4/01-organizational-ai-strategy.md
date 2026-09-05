@@ -66,6 +66,36 @@ Eighteen months later the review finds usage now concentrated in the
 sanctioned catalog with negligible shadow spend, and the review cadence
 becomes the mechanism that keeps the strategy current as new tools emerge.
 
+## How It Actually Works
+
+An organizational strategy has to set guardrails at the level of *task
+mechanism*, not just tool brand, because the underlying risk in any AI use
+case tracks how the technology actually generates output, not which vendor
+happens to be running it. "Never allowed regardless of tool" guardrails
+are most defensible when they're anchored to structural properties: a
+policy against using unaided-recall generation for a consequential decision
+about a specific individual (a hiring screen, a credit decision) is really
+a policy against trusting a mechanism — pattern-matched, non-verifiable,
+occasionally confidently-wrong text generation — for a use case where being
+wrong has an unacceptable cost, and that reasoning holds regardless of which
+vendor's model happens to be deployed, or how much better next year's
+version claims to be, because the mechanistic limitation (no built-in
+truth-verification) is a property of the whole model class, not a
+temporary capability gap any one vendor is about to close.
+
+"Scope and ambition" decisions benefit from the same mechanism-first lens:
+the honest boundary of what generative AI can reliably do — strong at text
+transformation grounded in supplied data, strong at pattern-matched
+generation for well-represented tasks, weak at unaided factual recall,
+weak at anything requiring true causal reasoning about a specific,
+unprecedented situation — doesn't move nearly as fast as marketing
+narratives about "AI can now do X" suggest. A strategy that scopes ambition
+against this actual, technical boundary, revisited periodically as
+retrieval and tool-use capabilities genuinely improve (Module 9, Level 3),
+ages far better than one scoped against a press release, because the
+former tracks what's really changing and the latter tracks what a
+competitor merely announced.
+
 ## Exercise
 
 Draft a one-page organizational AI strategy for a real or plausible

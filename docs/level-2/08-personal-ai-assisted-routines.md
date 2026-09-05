@@ -66,6 +66,36 @@ posts it to the team channel (output destination). The task now takes
 about 10 minutes weekly, and the format is more consistent than her manual
 version because the template never drifts.
 
+## How It Actually Works
+
+A saved, reusable prompt template works mechanically for the same reason
+few-shot examples and detailed prompts improve one-off results (Module 8):
+it fixes the constraints, format, and framing that would otherwise vary
+prompt-to-prompt, which narrows the model's space of plausible completions
+to the same tight region every time it runs. Ad-hoc prompting is
+inconsistent specifically because casually re-typing "summarize this" or
+"draft a reply" each time produces slightly different wording, which
+shifts which region of the model's learned probability space gets
+activated — sometimes only slightly, but enough to change tone, length, or
+structure in ways that feel arbitrary. A saved template removes that
+variance at the source: the input sequence conditioning the model's output
+is, by construction, nearly identical every time you run it, which is why
+routines feel more "reliable" than the same task prompted freshly — not
+because the model changed, but because the input stopped varying.
+
+This also explains why a good routine template usually encodes more than
+just the instruction — it typically embeds a worked example of the
+desired output format, explicit constraints (length, tone, what to exclude),
+and sometimes a placeholder structure to fill in. Each of those elements is
+doing real conditioning work on the model's next-token predictions, not
+just serving as a readability aid for the human reusing the template. A
+routine that degrades over time (starts producing worse output for no
+apparent reason) is almost always a sign the underlying model version
+changed on the provider's end — since your template's wording didn't
+change, the shift means the same input sequence is now landing in a
+subtly different learned probability space, which is worth checking before
+assuming you did something wrong.
+
 ## Exercise
 
 Pick one task you do at least weekly that has a fairly repeatable shape.

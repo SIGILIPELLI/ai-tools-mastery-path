@@ -67,6 +67,36 @@ treats it as a lead, not a fact — she goes and finds the actual 2019 paper
 before citing anything about it. It turns out the paper's actual conclusion
 was more nuanced than the AI's summary suggested.
 
+## How It Actually Works
+
+Writing assistance and research assistance stress different parts of the
+same underlying model, which is why they call for different verification
+habits. For writing tasks — rephrasing, tightening, matching a tone — the
+model is doing something it's structurally well-suited to: transforming one
+sequence of text into another sequence of text, guided entirely by patterns
+learned from enormous volumes of human-written prose. There's no external
+fact against which a rewritten sentence needs to be checked; "does this
+read well and preserve meaning" is a judgment the model's training data
+(itself full of edited, polished prose) equips it to approximate
+reasonably well.
+
+Research tasks stress a different, weaker part of the same mechanism: the
+model's "knowledge" of specific facts, dates, and sources is not a lookup
+table — it's a byproduct of patterns compressed into billions of numeric
+weights during training. A fact that appeared often, consistently, and
+recently in training data is usually reproduced accurately; a fact that's
+rare, was inconsistently reported, or postdates the model's training cutoff
+is not reliably retrievable at all — the model instead generates the
+*most statistically plausible* answer, which can be indistinguishable in
+tone from a well-supported one. This is why "cite your source" is a much
+harder ask than it sounds: unless the tool is explicitly doing retrieval
+(searching the live web or a document store and quoting from what it
+found), any citation the model produces on its own is itself just a
+plausible-sounding piece of generated text — it may name a real, wrong, or
+entirely fabricated source with equal confidence. Tools that show real
+citations are running a retrieval step underneath the generation, not
+asking the base model to "remember" where a fact came from.
+
 ## Exercise
 
 Pick a real writing or research task you have coming up. If it's writing:

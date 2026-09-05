@@ -63,6 +63,40 @@ described the failure back to the tool, got a corrected version, and tested
 that one too before trusting it — never running an untested version on data
 she couldn't afford to lose.
 
+## How It Actually Works
+
+Coding assistants use the same next-token-prediction transformer as chat
+assistants, trained on a corpus weighted heavily toward source code,
+documentation, and forums like Stack Overflow — which is why they're
+fluent in common patterns and idioms but shakier on anything rare or
+project-specific. The three modes map to three different amounts of
+*context* the model is given before it generates:
+
+Autocomplete-style suggestion typically only sees the current file (or a
+small window around your cursor) plus perhaps a few related files the tool
+guesses are relevant — it's predicting "what code plausibly comes next
+here" the same way a chat model predicts the next word, with no real
+understanding of your whole codebase's architecture or business rules.
+Chat-style code explanation and generation gets a larger context: the
+files you've opened or pasted in, sometimes a summary of your repo
+structure. It can reason more, but everything it says about your code is
+still bounded by what fits in its context window — ask about a file it was
+never shown and it will guess, often confidently and wrong. Agentic coding
+tools add a loop on top of the same model: it can call functions to read
+files, run a linter or test suite, see the (real, factual) output, and
+generate its next step based on that output — which is precisely why
+agentic tools catch more of their own mistakes than plain chat-based
+suggestion. The model isn't smarter in agent mode; it's been given tools to
+check its own work against ground truth instead of only against its
+internal sense of what "looks right."
+
+This is also why AI-generated code can look syntactically perfect while
+being subtly wrong: the model is pattern-matching against code that
+*looks like* correct code for this kind of task, not executing your logic
+or reasoning about your specific data step by step the way a compiler or
+interpreter does — which is exactly why running the result is
+non-negotiable, not optional caution.
+
 ## Exercise
 
 Think of one small, well-defined task an AI coding assistant could plausibly

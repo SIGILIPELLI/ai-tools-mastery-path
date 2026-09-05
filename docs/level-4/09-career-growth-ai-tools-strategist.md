@@ -60,6 +60,36 @@ governance function, this track record — not a certification — is what
 makes them the natural internal candidate, because the documented
 portfolio demonstrates every competency in section 2.
 
+## How It Actually Works
+
+What separates a durable AI tools strategist's expertise from expertise
+that ages out with the next product cycle is exactly the distinction this
+whole program has built toward: understanding the mechanism (how these
+models actually generate output, where that generation is reliable and
+where it isn't, how contracts and architecture — not marketing claims —
+actually determine data handling) rather than accumulating knowledge of
+which specific products currently lead which category. A strategist whose
+expertise is "I know which tools are best right now" has expertise with a
+half-life of months, in a field that reshuffles constantly (Module 1,
+Level 1); a strategist whose expertise is "I can evaluate any new tool
+against the underlying mechanism, structural risk, and contract-level
+guarantees that actually determine whether it's trustworthy for a given
+task" has expertise that keeps compounding in value as new tools launch,
+because every new tool is still built on the same handful of underlying
+mechanisms this program has spent four levels making legible.
+
+This is a practical, not just philosophical, distinction for career
+positioning: the organizational functions this role serves — governance
+committee input (Module 2), vendor risk assessment (Module 3), ROI and
+maturity measurement (Modules 5 and 6) — all fundamentally require someone
+who can translate a specific proposed tool or use case into its
+mechanistic risk and reliability profile for a non-technical
+decision-maker to act on. That translation skill, built from understanding
+how the technology actually works rather than memorizing current product
+names, is what remains valuable and transferable across employers, tool
+generations, and even entirely new AI product categories that don't exist
+yet.
+
 ## Exercise
 
 Using the section 2 competency map, honestly assess where your current

@@ -62,6 +62,37 @@ against their fact sheet. Output volume barely changes, but the rejection
 rate at editorial review drops sharply because errors get caught at the
 outline stage instead of after a full draft is written.
 
+## How It Actually Works
+
+A single-prompt request for "a blog post about X" fails for a specific,
+mechanical reason: it gives the model almost no information to narrow its
+enormous space of plausible completions, so it falls back on whatever
+generic structure was statistically most common across the huge volume of
+blog-post-shaped text in its training data — introduction, three
+generic points, conclusion — because that shape is the "safest" (most
+probable, least specific) completion available given so little
+constraint. There's no laziness or corner-cutting happening; it's the
+direct consequence of an under-specified prompt sitting in a huge region
+of probability space, exactly as Module 8's prompting-fundamentals section
+described, just now visible at the scale of a whole content pipeline
+instead of one prompt.
+
+A staged pipeline (outline, then draft, then edit) works by turning one
+huge, underspecified generation task into several small, well-specified
+ones, each narrowed by the previous stage's concrete output sitting in
+context. An outline stage, given your specific audience and angle, produces
+specific section headers — themselves now a strong constraint that
+massively narrows what the drafting stage's "plausible next tokens" can be,
+because the draft has to be *consistent with* a concrete outline already in
+its context, not free-floating. Each additional piece of concrete,
+specific context you inject at a stage (real audience data, a real
+competitor example, a real brand voice sample) works the same way: it's
+not "helping the AI think harder," it's literally removing probability
+mass from the generic, most-common completions and concentrating it on
+completions consistent with what you supplied — which is why quality gates
+between stages catch generic output early, before it's been built on by
+every later stage.
+
 ## Exercise
 
 Pick a piece of content you need to produce (a post, an email, a report

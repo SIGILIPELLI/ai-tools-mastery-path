@@ -64,6 +64,33 @@ a free tool. Risk: AI might infer a result she didn't actually observe;
 her review step specifically checks every stated result against her raw
 notes before appending.
 
+## How It Actually Works
+
+Applying the tool-comparison and chaining frameworks from earlier modules to
+a real, recurring task works because your specific task has a specific
+mechanistic profile — some steps are text-transformation over data you
+supply (reliable), some steps depend on unaided recall (need verification
+or retrieval), and some steps might warrant a tool-use loop that checks its
+own output against real feedback (most reliable, when available). Mapping
+your actual weekly task onto that profile, rather than reasoning about "AI"
+as one undifferentiated capability, is what turns the earlier modules'
+abstract distinctions into a concrete, defensible design for one workflow.
+
+This is also why documenting your verification step (a required part of
+this project) is not paperwork — it's the place where you make explicit
+which category each step of your workflow falls into and what check that
+implies. A step that only transforms text you supplied needs a light
+check (does this preserve meaning and match my intent); a step that recalls
+a fact from the model's training needs a real check against an independent
+source; a step wired into an agentic loop that already ran tests or a
+linter needs a lighter check than one that didn't, because part of the
+verification already happened inside the tool. Writing this reasoning down
+per step, rather than applying one blanket "always double-check the AI"
+rule, is what makes the resulting workflow both efficient (you don't
+over-verify low-risk steps) and safe (you don't under-verify high-risk
+ones) — and it's a direct, applied continuation of the mechanism this
+whole level has been building toward.
+
 ## Exercise
 
 Complete the project using the structure in section 2. Run your designed
