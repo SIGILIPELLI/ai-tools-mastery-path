@@ -1356,6 +1356,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#how-it-actually-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How It Actually Works
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#exercise" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2283,6 +2294,17 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#how-it-actually-works" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        How It Actually Works
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#exercise" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -2457,6 +2479,33 @@ against her own memory of the week before sending (review checkpoint), and
 posts it to the team channel (output destination). The task now takes
 about 10 minutes weekly, and the format is more consistent than her manual
 version because the template never drifts.</p>
+<h2 id="how-it-actually-works">How It Actually Works<a class="headerlink" href="#how-it-actually-works" title="Permanent link">&para;</a></h2>
+<p>A saved, reusable prompt template works mechanically for the same reason
+few-shot examples and detailed prompts improve one-off results (Module 8):
+it fixes the constraints, format, and framing that would otherwise vary
+prompt-to-prompt, which narrows the model's space of plausible completions
+to the same tight region every time it runs. Ad-hoc prompting is
+inconsistent specifically because casually re-typing "summarize this" or
+"draft a reply" each time produces slightly different wording, which
+shifts which region of the model's learned probability space gets
+activated — sometimes only slightly, but enough to change tone, length, or
+structure in ways that feel arbitrary. A saved template removes that
+variance at the source: the input sequence conditioning the model's output
+is, by construction, nearly identical every time you run it, which is why
+routines feel more "reliable" than the same task prompted freshly — not
+because the model changed, but because the input stopped varying.</p>
+<p>This also explains why a good routine template usually encodes more than
+just the instruction — it typically embeds a worked example of the
+desired output format, explicit constraints (length, tone, what to exclude),
+and sometimes a placeholder structure to fill in. Each of those elements is
+doing real conditioning work on the model's next-token predictions, not
+just serving as a readability aid for the human reusing the template. A
+routine that degrades over time (starts producing worse output for no
+apparent reason) is almost always a sign the underlying model version
+changed on the provider's end — since your template's wording didn't
+change, the shift means the same input sequence is now landing in a
+subtly different learned probability space, which is worth checking before
+assuming you did something wrong.</p>
 <h2 id="exercise">Exercise<a class="headerlink" href="#exercise" title="Permanent link">&para;</a></h2>
 <p>Pick one task you do at least weekly that has a fairly repeatable shape.
 Design it as a routine using the five components in section 2. Run it for
