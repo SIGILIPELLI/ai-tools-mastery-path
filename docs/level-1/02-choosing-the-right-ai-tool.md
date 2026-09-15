@@ -1,3 +1,7 @@
+---
+description: "Choosing the Right AI Tool for a Task — Once you know the categories from Module 1, the next skill is choosing within and across them for a specific task…"
+---
+
 # 02 · Choosing the Right AI Tool for a Task
 
 Once you know the categories from Module 1, the next skill is choosing

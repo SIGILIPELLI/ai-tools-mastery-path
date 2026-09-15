@@ -1,3 +1,7 @@
+---
+description: "Scaling AI Tool Adoption Across an Organization — A successful pilot or single-team rollout (Level 3) doesn't automatically scale. This module covers what…"
+---
+
 # 04 · Scaling AI Tool Adoption Across an Organization
 
 A successful pilot or single-team rollout (Level 3) doesn't automatically

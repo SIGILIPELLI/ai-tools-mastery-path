@@ -1,3 +1,7 @@
+---
+description: "Common Pitfalls in AI Tool Adoption — This module consolidates the failure patterns from the rest of Level 2 into one reference: the mistakes that show up…"
+---
+
 # 09 · Common Pitfalls in AI Tool Adoption
 
 This module consolidates the failure patterns from the rest of Level 2

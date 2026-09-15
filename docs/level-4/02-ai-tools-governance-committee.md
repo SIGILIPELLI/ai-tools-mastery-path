@@ -1,3 +1,7 @@
+---
+description: "Building an AI Tools Governance Committee — A strategy (Module 1) needs a body that actually operates it day to day. This module covers how to structure a…"
+---
+
 # 02 · Building an AI Tools Governance Committee
 
 A strategy (Module 1) needs a body that actually operates it day to day.

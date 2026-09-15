@@ -1,3 +1,7 @@
+---
+description: "Organizational AI Strategy — Most organizations are between 'ad hoc' and 'reactive' and should aim for 'coordinated' before attempting 'strategic' …"
+---
+
 # 01 · Organizational AI Strategy
 
 Level 3 built adoption skill at the team level. Level 4 operates at the

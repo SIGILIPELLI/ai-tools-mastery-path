@@ -1,3 +1,7 @@
+---
+description: "Project — Design an AI-Augmented Personal Workflow — This capstone project for Level 2 asks you to apply everything from modules 1-9 to design, build, and…"
+---
+
 # 10 · Project — Design an AI-Augmented Personal Workflow
 
 This capstone project for Level 2 asks you to apply everything from

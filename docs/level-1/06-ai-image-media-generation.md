@@ -1,3 +1,7 @@
+---
+description: "AI Image & Media Generation Basics — Image and media generation tools let you produce visual or audio content from a text description or a reference…"
+---
+
 # 06 · AI Image & Media Generation Basics
 
 Image and media generation tools let you produce visual or audio content

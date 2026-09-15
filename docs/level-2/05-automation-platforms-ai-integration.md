@@ -1,3 +1,7 @@
+---
+description: "Automation Platforms & AI Integration — Automation platforms (workflow/integration tools that connect apps and trigger actions) become far more capable…"
+---
+
 # 05 · Automation Platforms & AI Integration
 
 Automation platforms (workflow/integration tools that connect apps and

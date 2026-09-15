@@ -1,3 +1,7 @@
+---
+description: "Combining AI Tools in a Workflow — No single AI tool is best at everything. The intermediate skill isn't picking one tool — it's chaining several into a…"
+---
+
 # 02 · Combining AI Tools in a Workflow
 
 No single AI tool is best at everything. The intermediate skill isn't

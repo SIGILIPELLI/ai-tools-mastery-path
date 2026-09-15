@@ -1,3 +1,7 @@
+---
+description: "Data Privacy & Security When Using AI Tools — Every prompt, upload, and pasted document is data leaving your control to some degree. This module builds a…"
+---
+
 # 06 · Data Privacy & Security When Using AI Tools
 
 Every prompt, upload, and pasted document is data leaving your control to

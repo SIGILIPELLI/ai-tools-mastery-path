@@ -1,3 +1,7 @@
+---
+description: "The Landscape of AI Tools — 'AI tools' is not one category — it's a fast-growing collection of very different products that happen to share an underlying…"
+---
+
 # 01 · The Landscape of AI Tools
 
 "AI tools" is not one category — it's a fast-growing collection of very

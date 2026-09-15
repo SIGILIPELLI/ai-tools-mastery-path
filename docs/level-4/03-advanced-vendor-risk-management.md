@@ -1,3 +1,7 @@
+---
+description: "Advanced Vendor Risk Management for AI Tools — Level 3 Module 3 covered evaluating a single vendor. At organizational scale, the challenge shifts to…"
+---
+
 # 03 · Advanced Vendor Risk Management for AI Tools
 
 Level 3 Module 3 covered evaluating a single vendor. At organizational

@@ -1,3 +1,7 @@
+---
+description: "Building Personal AI-Assisted Routines — A routine is a workflow you run often enough that it deserves to be designed once and reused, rather than…"
+---
+
 # 08 · Building Personal AI-Assisted Routines
 
 A routine is a workflow you run often enough that it deserves to be

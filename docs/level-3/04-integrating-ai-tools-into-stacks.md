@@ -1,3 +1,7 @@
+---
+description: "Integrating AI Tools into Existing Software Stacks — Beyond using an AI tool through its own interface, teams often need it woven into existing systems …"
+---
+
 # 04 · Integrating AI Tools into Existing Software Stacks
 
 Beyond using an AI tool through its own interface, teams often need it

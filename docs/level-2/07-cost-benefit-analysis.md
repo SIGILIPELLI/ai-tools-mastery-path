@@ -1,3 +1,7 @@
+---
+description: "Cost-Benefit Analysis of AI Tool Adoption — Not every AI tool subscription pays for itself, and 'it feels useful' is not a cost-benefit analysis. This…"
+---
+
 # 07 · Cost-Benefit Analysis of AI Tool Adoption
 
 Not every AI tool subscription pays for itself, and "it feels useful" is

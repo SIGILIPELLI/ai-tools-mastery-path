@@ -1,3 +1,7 @@
+---
+description: "AI for Writing & Research Tasks — Writing and research are two of the highest-volume use cases for AI tools, and they're often lumped together — but they…"
+---
+
 # 04 · AI for Writing & Research Tasks
 
 Writing and research are two of the highest-volume use cases for AI tools,

@@ -1,3 +1,7 @@
+---
+description: "Building an AI Center of Excellence — As adoption scales (Module 4) and maturity grows (Module 6), many organizations formalize a dedicated function — an…"
+---
+
 # 07 · Building an AI Center of Excellence
 
 As adoption scales (Module 4) and maturity grows (Module 6), many

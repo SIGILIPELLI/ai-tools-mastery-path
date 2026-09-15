@@ -1,3 +1,7 @@
+---
+description: "AI for Productivity & Automation — Beyond generating content directly, a large and growing category of AI tools works around your existing tasks …"
+---
+
 # 07 · AI for Productivity & Automation
 
 Beyond generating content directly, a large and growing category of AI

@@ -1,3 +1,7 @@
+---
+description: "Career Growth: AI Tools Strategist/Consultant — Having built strategy, governance, vendor management, ethics, maturity measurement, CoE design, and…"
+---
+
 # 09 · Career Growth: AI Tools Strategist/Consultant
 
 Having built strategy, governance, vendor management, ethics, maturity

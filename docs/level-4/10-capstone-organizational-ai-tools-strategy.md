@@ -1,3 +1,7 @@
+---
+description: "Capstone — Full Organizational AI Tools Strategy — This capstone integrates every Level 4 module into a single deliverable: a full organizational AI tools…"
+---
+
 # 10 · Capstone — Full Organizational AI Tools Strategy
 
 This capstone integrates every Level 4 module into a single deliverable:

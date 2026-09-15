@@ -1,3 +1,7 @@
+---
+description: "Measuring Organizational AI Maturity — Strategy (Module 1) sets direction; this module gives you a way to measure, concretely, how far an organization has…"
+---
+
 # 06 · Measuring Organizational AI Maturity
 
 Strategy (Module 1) sets direction; this module gives you a way to

@@ -1,3 +1,7 @@
+---
+description: "Future-Proofing an AI Tool Strategy — Everything built so far — strategy, governance, vendor management, CoE — risks becoming obsolete as the tool…"
+---
+
 # 08 · Future-Proofing an AI Tool Strategy
 
 Everything built so far — strategy, governance, vendor management, CoE —

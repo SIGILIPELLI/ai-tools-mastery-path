@@ -1,3 +1,7 @@
+---
+description: "AI-Assisted Content Creation Pipelines — A 'pipeline' is a repeatable sequence of steps that turns a rough idea into finished content, with AI doing…"
+---
+
 # 04 · AI-Assisted Content Creation Pipelines
 
 A "pipeline" is a repeatable sequence of steps that turns a rough idea into

@@ -1,3 +1,7 @@
+---
+description: "Building Internal AI Tool Guidelines — A guideline document turns individual judgment calls (Level 2) into a shared standard a team can actually follow…"
+---
+
 # 02 · Building Internal AI Tool Guidelines
 
 A guideline document turns individual judgment calls (Level 2) into a

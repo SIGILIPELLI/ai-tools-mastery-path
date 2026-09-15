@@ -1,3 +1,7 @@
+---
+description: "AI Tool Adoption for Teams — Level 2 built individual judgment. Level 3 shifts to teams: adopting an AI tool across several people changes the problem …"
+---
+
 # 01 · AI Tool Adoption for Teams
 
 Level 2 built individual judgment. Level 3 shifts to teams: adopting an AI

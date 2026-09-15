@@ -1,3 +1,7 @@
+---
+description: "Training Teams to Use AI Tools Effectively — Tool access without training produces the exact adoption gap seen in the ROI module: heavy users get real…"
+---
+
 # 08 · Training Teams to Use AI Tools Effectively
 
 Tool access without training produces the exact adoption gap seen in the

@@ -1,3 +1,7 @@
+---
+description: "Project — An AI Tool Adoption Proposal for a Team — This capstone project pulls together every Level 3 module — evaluation, guidelines, integration, ROI…"
+---
+
 # 10 · Project — An AI Tool Adoption Proposal for a Team
 
 This capstone project pulls together every Level 3 module — evaluation,

@@ -1,3 +1,7 @@
+---
+description: "Ethical & Responsible AI Tool Use at Scale — Individual and team-level ethical use (earlier levels) focuses on immediate, visible harms. At organizational…"
+---
+
 # 05 · Ethical & Responsible AI Tool Use at Scale
 
 Individual and team-level ethical use (earlier levels) focuses on

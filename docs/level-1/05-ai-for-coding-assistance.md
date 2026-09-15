@@ -1,3 +1,7 @@
+---
+description: "AI for Coding Assistance — You don't need to be a programmer to understand this module — it's written for anyone who might use an AI tool to write, fix…"
+---
+
 # 05 · AI for Coding Assistance
 
 You don't need to be a programmer to understand this module — it's written

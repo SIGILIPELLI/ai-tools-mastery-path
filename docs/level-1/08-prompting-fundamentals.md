@@ -1,3 +1,7 @@
+---
+description: "Prompting Fundamentals That Work Across Tools — Every category covered so far responds to the same underlying prompting principles, even though the tools…"
+---
+
 # 08 · Prompting Fundamentals That Work Across Tools
 
 Every category covered so far responds to the same underlying prompting

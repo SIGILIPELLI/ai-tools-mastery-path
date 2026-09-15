@@ -1,3 +1,7 @@
+---
+description: "Evaluating AI Output Critically — Every earlier module has referenced verification in passing. This module makes it the whole subject: the specific…"
+---
+
 # 09 · Evaluating AI Output Critically
 
 Every earlier module has referenced verification in passing. This module

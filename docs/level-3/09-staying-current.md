@@ -1,3 +1,7 @@
+---
+description: "Staying Current in a Fast-Moving Landscape — Everything in Level 3 assumes a stable enough picture of available tools to build guidelines, evaluate…"
+---
+
 # 09 · Staying Current in a Fast-Moving Landscape
 
 Everything in Level 3 assumes a stable enough picture of available tools

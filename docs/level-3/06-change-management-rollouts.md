@@ -1,3 +1,7 @@
+---
+description: "Change Management for AI Tool Rollouts — A technically sound AI tool rollout can still fail if the human side of change isn't managed. This module applies…"
+---
+
 # 06 · Change Management for AI Tool Rollouts
 
 A technically sound AI tool rollout can still fail if the human side of

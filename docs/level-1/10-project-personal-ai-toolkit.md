@@ -1,3 +1,7 @@
+---
+description: "Project — Build a Personal AI Toolkit — This capstone pulls together every module in Level 1 into a single deliverable: a personal AI toolkit of 3-5…"
+---
+
 # 10 · Project — Build a Personal AI Toolkit
 
 This capstone pulls together every module in Level 1 into a single

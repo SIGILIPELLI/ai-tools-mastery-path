@@ -1,3 +1,7 @@
+---
+description: "Data Governance for AI Tool Usage — Once a team routes real work through AI tools, the question stops being 'is this tool good' and becomes 'what data are…"
+---
+
 # 07 · Data Governance for AI Tool Usage
 
 Once a team routes real work through AI tools, the question stops being

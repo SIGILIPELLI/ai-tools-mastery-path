@@ -1,3 +1,7 @@
+---
+description: "Evaluating AI Vendors — Choosing an AI vendor at team or organizational scale carries stakes far beyond the Module 1 (Level 2) individual comparison …"
+---
+
 # 03 · Evaluating AI Vendors
 
 Choosing an AI vendor at team or organizational scale carries stakes far

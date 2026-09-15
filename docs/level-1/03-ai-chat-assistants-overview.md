@@ -1,3 +1,7 @@
+---
+description: "AI Chat Assistants Overview — Chat assistants are the most widely used category of AI tool and often the first one people encounter, but treating 'the…"
+---
+
 # 03 · AI Chat Assistants Overview
 
 Chat assistants are the most widely used category of AI tool and often the

@@ -1,3 +1,7 @@
+---
+description: "Comparing AI Tools Systematically — Level 1 taught you to pick a reasonable tool for a task. This module builds the habit of comparing tools rigorously…"
+---
+
 # 01 · Comparing AI Tools Systematically
 
 Level 1 taught you to pick a reasonable tool for a task. This module builds

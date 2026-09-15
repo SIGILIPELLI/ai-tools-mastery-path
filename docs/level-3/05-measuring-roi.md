@@ -1,3 +1,7 @@
+---
+description: "Measuring ROI of AI Tool Adoption — Level 2's cost-benefit analysis worked for one person's time. At team scale, ROI measurement needs to account for…"
+---
+
 # 05 · Measuring ROI of AI Tool Adoption
 
 Level 2's cost-benefit analysis worked for one person's time. At team

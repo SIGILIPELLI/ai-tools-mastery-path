@@ -1,3 +1,7 @@
+---
+description: "AI-Assisted Research Workflows — Research is one of the highest-leverage uses of AI tools, and one of the easiest to get wrong. This module builds a…"
+---
+
 # 03 · AI-Assisted Research Workflows
 
 Research is one of the highest-leverage uses of AI tools, and one of the
