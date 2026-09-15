@@ -104,6 +104,12 @@ model's architecture — which is exactly why a durable privacy habit
 based on what a vendor's contract actually commits to, not on the vendor's
 "how the AI works" marketing copy.
 
+## 🔀 Related lessons on other tracks
+
+- [Claude Training — 07 · Privacy & Data Handling Considerations When Using AI Tools](https://sigilipelli.github.io/claude-training-mastery-path/level-3/07-privacy-data-handling/)
+- [AI/ML — 07 · Responsible AI — Fairness, Privacy, Security](https://sigilipelli.github.io/ai-ml-mastery-path/level-4/07-responsible-ai/)
+- [Cybersecurity — 08 · Security Tools Setup](https://sigilipelli.github.io/cybersecurity-mastery-path/level-1/08-security-tools-setup/)
+
 ## Exercise
 
 Take a real piece of text you might otherwise paste into an AI tool.

@@ -93,6 +93,12 @@ adapted for it — which is exactly the adaptation "advanced" vendor risk
 management for AI tools, as distinct from generic vendor risk management,
 actually has to add.
 
+## 🔀 Related lessons on other tracks
+
+- [Agile — 04 · Risk Management Across SDLC Phases](https://sigilipelli.github.io/agile-mastery-path/level-3/04-risk-management-sdlc/)
+- [AI Manager — 08 · Vendor & Partner Management for AI](https://sigilipelli.github.io/ai-manager-mastery-path/level-3/08-vendor-partner-management/)
+- [Cybersecurity — 09 · Security Leadership & Risk Management](https://sigilipelli.github.io/cybersecurity-mastery-path/level-4/09-security-leadership-risk-management/)
+
 ## Exercise
 
 Build a vendor risk register (section 3 template) for 3-5 real or

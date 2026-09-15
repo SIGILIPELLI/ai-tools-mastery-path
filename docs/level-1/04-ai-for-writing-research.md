@@ -101,6 +101,10 @@ entirely fabricated source with equal confidence. Tools that show real
 citations are running a retrieval step underneath the generation, not
 asking the base model to "remember" where a fact came from.
 
+## 🔀 Related lessons on other tracks
+
+- [Claude Training — 04 · Using Claude for Writing Tasks](https://sigilipelli.github.io/claude-training-mastery-path/level-1/04-using-claude-for-writing-tasks/)
+
 ## Exercise
 
 Pick a real writing or research task you have coming up. If it's writing:

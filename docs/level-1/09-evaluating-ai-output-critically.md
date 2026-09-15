@@ -97,6 +97,10 @@ was *generated from what you gave the model* versus *recalled from
 training* — the former deserves real trust, the latter deserves the same
 skepticism you'd apply to an uncited claim from a stranger.
 
+## 🔀 Related lessons on other tracks
+
+- [Claude Training — 09 · Evaluating AI Output Quality Systematically](https://sigilipelli.github.io/claude-training-mastery-path/level-3/09-evaluating-output-quality/)
+
 ## Exercise
 
 Take one piece of AI output you've generated recently (or generate a new

@@ -121,6 +121,10 @@ technology works, not about which vendor currently implements it best. That
 durability is the entire point of building the toolkit as a document with
 reasoning attached, rather than as a bare list of app names.
 
+## 🔀 Related lessons on other tracks
+
+- [Claude Training — 10 · Project — Build a Personal Prompt Template Library](https://sigilipelli.github.io/claude-training-mastery-path/level-1/10-project-prompt-template-library/)
+
 ## Exercise (the deliverable)
 
 Fill out all five sections of the template above completely, using your own

@@ -94,6 +94,12 @@ names, is what remains valuable and transferable across employers, tool
 generations, and even entirely new AI product categories that don't exist
 yet.
 
+## 🔀 Related lessons on other tracks
+
+- [Workday — 09 · Career Growth: Workday Analyst/Consultant Path](https://sigilipelli.github.io/workday-mastery-path/level-4/09-career-growth-analyst-consultant/)
+- [Agile — 09 · Career Growth: Scrum Master to Agile Coach/Director](https://sigilipelli.github.io/agile-mastery-path/level-4/09-career-growth-scrum-master-to-coach/)
+- [AI Manager — 09 · Career Growth: AI Manager to Chief AI Officer](https://sigilipelli.github.io/ai-manager-mastery-path/level-4/09-career-growth-ai-manager-to-caio/)
+
 ## Exercise
 
 Using the section 2 competency map, honestly assess where your current

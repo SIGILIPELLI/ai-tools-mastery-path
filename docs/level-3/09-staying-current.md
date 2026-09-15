@@ -102,6 +102,10 @@ manually" to "can now rely on a tool-use loop's self-check," for instance)
 rather than just swapping which vendor's logo appears in your workflow
 diagram.
 
+## 🔀 Related lessons on other tracks
+
+- [Claude Training — 06 · Staying Current as AI Capabilities Evolve](https://sigilipelli.github.io/claude-training-mastery-path/level-4/06-staying-current-ai-capabilities/)
+
 ## Exercise
 
 List the 2-3 sources you'd actually use for each row of the section 2

@@ -104,6 +104,10 @@ teaches the underlying pattern (grounded vs. recalled, verified vs.
 unverified) in a way self-directed trial and error usually never surfaces
 on its own, however much time is given to it.
 
+## 🔀 Related lessons on other tracks
+
+- [Claude Training — 05 · Training Others to Use AI Assistants Effectively](https://sigilipelli.github.io/claude-training-mastery-path/level-4/05-training-others-to-use-ai/)
+
 ## Exercise
 
 Design a two-tier training plan (foundational + role-specific) for an AI

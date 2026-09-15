@@ -126,6 +126,11 @@ executes, and feeds the result back into the model's next turn. A tool that
 model; the difference is whether the surrounding application exposes it a
 menu of callable actions.
 
+## 🔀 Related lessons on other tracks
+
+- [Agile — 04 · Choosing the Right Methodology per Project Type](https://sigilipelli.github.io/agile-mastery-path/level-4/04-choosing-right-methodology/)
+- [Server Ops — 05 · Choosing the Right HA Architecture for a Given SLA](https://sigilipelli.github.io/server-ops-mastery-path/level-4/05-choosing-ha-architecture-for-sla/)
+
 ## Exercise
 
 Take three tasks from your Module 1 list. For each, run the four-question
