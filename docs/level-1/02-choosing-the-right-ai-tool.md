@@ -128,8 +128,8 @@ menu of callable actions.
 
 ## 🔀 Related lessons on other tracks
 
-- [Agile — 04 · Choosing the Right Methodology per Project Type](https://sigilipelli.github.io/agile-mastery-path/level-4/04-choosing-right-methodology/)
-- [Server Ops — 05 · Choosing the Right HA Architecture for a Given SLA](https://sigilipelli.github.io/server-ops-mastery-path/level-4/05-choosing-ha-architecture-for-sla/)
+- [Agile — 04 · Choosing the Right Methodology per Project Type](https://learnmasterypath.com/agile-mastery-path/level-4/04-choosing-right-methodology/)
+- [Server Ops — 05 · Choosing the Right HA Architecture for a Given SLA](https://learnmasterypath.com/server-ops-mastery-path/level-4/05-choosing-ha-architecture-for-sla/)
 
 ## Exercise
 

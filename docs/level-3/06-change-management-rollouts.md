@@ -100,9 +100,9 @@ skeptical, task-aware middle group a good rollout is actually aiming for.
 
 ## 🔀 Related lessons on other tracks
 
-- [Workday — 07 · Change Management for Workday Rollouts](https://sigilipelli.github.io/workday-mastery-path/level-4/07-change-management-rollouts/)
-- [Agile — 01 · Agile Transformation & Change Management](https://sigilipelli.github.io/agile-mastery-path/level-4/01-agile-transformation-change-management/)
-- [AI Manager — 08 · Change Management for AI Adoption](https://sigilipelli.github.io/ai-manager-mastery-path/level-2/08-change-management-ai-adoption/)
+- [Workday — 07 · Change Management for Workday Rollouts](https://learnmasterypath.com/workday-mastery-path/level-4/07-change-management-rollouts/)
+- [Agile — 01 · Agile Transformation & Change Management](https://learnmasterypath.com/agile-mastery-path/level-4/01-agile-transformation-change-management/)
+- [AI Manager — 08 · Change Management for AI Adoption](https://learnmasterypath.com/ai-manager-mastery-path/level-2/08-change-management-ai-adoption/)
 
 ## Exercise
 

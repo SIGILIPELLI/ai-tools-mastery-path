@@ -106,9 +106,9 @@ based on what a vendor's contract actually commits to, not on the vendor's
 
 ## 🔀 Related lessons on other tracks
 
-- [Claude Training — 07 · Privacy & Data Handling Considerations When Using AI Tools](https://sigilipelli.github.io/claude-training-mastery-path/level-3/07-privacy-data-handling/)
-- [AI/ML — 07 · Responsible AI — Fairness, Privacy, Security](https://sigilipelli.github.io/ai-ml-mastery-path/level-4/07-responsible-ai/)
-- [Cybersecurity — 08 · Security Tools Setup](https://sigilipelli.github.io/cybersecurity-mastery-path/level-1/08-security-tools-setup/)
+- [Claude Training — 07 · Privacy & Data Handling Considerations When Using AI Tools](https://learnmasterypath.com/claude-training-mastery-path/level-3/07-privacy-data-handling/)
+- [AI/ML — 07 · Responsible AI — Fairness, Privacy, Security](https://learnmasterypath.com/ai-ml-mastery-path/level-4/07-responsible-ai/)
+- [Cybersecurity — 08 · Security Tools Setup](https://learnmasterypath.com/cybersecurity-mastery-path/level-1/08-security-tools-setup/)
 
 ## Exercise
 

@@ -5,12 +5,12 @@ tools effectively — entry level to master level, with real frameworks,
 rubrics, and worked scenarios in every module. Focused on the **broad
 landscape** of AI tools and how to choose between them, not a deep dive on
 any single vendor (see
-[Claude Training Mastery Path](https://sigilipelli.github.io/claude-training-mastery-path/)
+[Claude Training Mastery Path](https://learnmasterypath.com/claude-training-mastery-path/)
 for that) and not hands-on ML engineering (see
-[AI/ML Mastery Path](https://sigilipelli.github.io/ai-ml-mastery-path/) for
+[AI/ML Mastery Path](https://learnmasterypath.com/ai-ml-mastery-path/) for
 the technical track).
 
-**Live site:** https://sigilipelli.github.io/ai-tools-mastery-path/
+**Live site:** https://learnmasterypath.com/ai-tools-mastery-path/
 
 ## Contents
 
@@ -41,13 +41,13 @@ python3 -m venv .venv
 
 ## Related
 
-- [Claude Training Mastery Path](https://sigilipelli.github.io/claude-training-mastery-path/)
-- [AI/ML Mastery Path](https://sigilipelli.github.io/ai-ml-mastery-path/)
-- [AI Manager Mastery Path](https://sigilipelli.github.io/ai-manager-mastery-path/)
-- [RAG Mastery Path](https://sigilipelli.github.io/rag-mastery-path/)
-- [LLM Development Mastery Path](https://sigilipelli.github.io/llm-dev-mastery-path/)
-- [Edge AI Mastery Path](https://sigilipelli.github.io/edge-ai-mastery-path/)
-- [Product Manager Mastery Path](https://sigilipelli.github.io/product-manager-mastery-path/)
-- [Project Manager Mastery Path](https://sigilipelli.github.io/project-manager-mastery-path/)
+- [Claude Training Mastery Path](https://learnmasterypath.com/claude-training-mastery-path/)
+- [AI/ML Mastery Path](https://learnmasterypath.com/ai-ml-mastery-path/)
+- [AI Manager Mastery Path](https://learnmasterypath.com/ai-manager-mastery-path/)
+- [RAG Mastery Path](https://learnmasterypath.com/rag-mastery-path/)
+- [LLM Development Mastery Path](https://learnmasterypath.com/llm-dev-mastery-path/)
+- [Edge AI Mastery Path](https://learnmasterypath.com/edge-ai-mastery-path/)
+- [Product Manager Mastery Path](https://learnmasterypath.com/product-manager-mastery-path/)
+- [Project Manager Mastery Path](https://learnmasterypath.com/project-manager-mastery-path/)
 
-See the full [Mastery Path series](https://sigilipelli.github.io/ai-tools-mastery-path/) homepage for links to all sister sites.
+See the full [Mastery Path series](https://learnmasterypath.com/ai-tools-mastery-path/) homepage for links to all sister sites.

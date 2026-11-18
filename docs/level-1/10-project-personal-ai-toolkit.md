@@ -123,7 +123,7 @@ reasoning attached, rather than as a bare list of app names.
 
 ## 🔀 Related lessons on other tracks
 
-- [Claude Training — 10 · Project — Build a Personal Prompt Template Library](https://sigilipelli.github.io/claude-training-mastery-path/level-1/10-project-prompt-template-library/)
+- [Claude Training — 10 · Project — Build a Personal Prompt Template Library](https://learnmasterypath.com/claude-training-mastery-path/level-1/10-project-prompt-template-library/)
 
 ## Exercise (the deliverable)
 

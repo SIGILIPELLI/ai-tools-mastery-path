@@ -103,7 +103,7 @@ asking the base model to "remember" where a fact came from.
 
 ## 🔀 Related lessons on other tracks
 
-- [Claude Training — 04 · Using Claude for Writing Tasks](https://sigilipelli.github.io/claude-training-mastery-path/level-1/04-using-claude-for-writing-tasks/)
+- [Claude Training — 04 · Using Claude for Writing Tasks](https://learnmasterypath.com/claude-training-mastery-path/level-1/04-using-claude-for-writing-tasks/)
 
 ## Exercise
 

@@ -106,7 +106,7 @@ on its own, however much time is given to it.
 
 ## 🔀 Related lessons on other tracks
 
-- [Claude Training — 05 · Training Others to Use AI Assistants Effectively](https://sigilipelli.github.io/claude-training-mastery-path/level-4/05-training-others-to-use-ai/)
+- [Claude Training — 05 · Training Others to Use AI Assistants Effectively](https://learnmasterypath.com/claude-training-mastery-path/level-4/05-training-others-to-use-ai/)
 
 ## Exercise
 

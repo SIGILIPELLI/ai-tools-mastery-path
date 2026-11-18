@@ -99,7 +99,7 @@ skepticism you'd apply to an uncited claim from a stranger.
 
 ## 🔀 Related lessons on other tracks
 
-- [Claude Training — 09 · Evaluating AI Output Quality Systematically](https://sigilipelli.github.io/claude-training-mastery-path/level-3/09-evaluating-output-quality/)
+- [Claude Training — 09 · Evaluating AI Output Quality Systematically](https://learnmasterypath.com/claude-training-mastery-path/level-3/09-evaluating-output-quality/)
 
 ## Exercise
 

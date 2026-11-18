@@ -21,7 +21,7 @@ You are free to:
 
 **No permission needed, no fee, no login required.** The only condition is
 attribution — credit "AI Tools Mastery Path" (or the wider [Mastery Path
-series](https://sigilipelli.github.io/ai-tools-mastery-path/)) and link back to the
+series](https://learnmasterypath.com/ai-tools-mastery-path/)) and link back to the
 original page.
 
 ## Code snippets

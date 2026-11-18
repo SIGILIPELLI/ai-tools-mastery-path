@@ -111,9 +111,9 @@ to supply the check the technology doesn't provide on its own.
 
 ## 🔀 Related lessons on other tracks
 
-- [AI Manager — 04 · Data Governance Basics](https://sigilipelli.github.io/ai-manager-mastery-path/level-2/04-data-governance-basics/)
-- [Data Engineering — 05 · Data Governance & Cataloging](https://sigilipelli.github.io/data-engineering-mastery-path/level-3/05-data-governance-cataloging/)
-- [Excel — 08 · Data Governance in Spreadsheet-Heavy Organizations](https://sigilipelli.github.io/excel-mastery-path/level-4/08-data-governance-spreadsheet-organizations/)
+- [AI Manager — 04 · Data Governance Basics](https://learnmasterypath.com/ai-manager-mastery-path/level-2/04-data-governance-basics/)
+- [Data Engineering — 05 · Data Governance & Cataloging](https://learnmasterypath.com/data-engineering-mastery-path/level-3/05-data-governance-cataloging/)
+- [Excel — 08 · Data Governance in Spreadsheet-Heavy Organizations](https://learnmasterypath.com/excel-mastery-path/level-4/08-data-governance-spreadsheet-organizations/)
 
 ## Exercise
 

@@ -95,9 +95,9 @@ actually has to add.
 
 ## 🔀 Related lessons on other tracks
 
-- [Agile — 04 · Risk Management Across SDLC Phases](https://sigilipelli.github.io/agile-mastery-path/level-3/04-risk-management-sdlc/)
-- [AI Manager — 08 · Vendor & Partner Management for AI](https://sigilipelli.github.io/ai-manager-mastery-path/level-3/08-vendor-partner-management/)
-- [Cybersecurity — 09 · Security Leadership & Risk Management](https://sigilipelli.github.io/cybersecurity-mastery-path/level-4/09-security-leadership-risk-management/)
+- [Agile — 04 · Risk Management Across SDLC Phases](https://learnmasterypath.com/agile-mastery-path/level-3/04-risk-management-sdlc/)
+- [AI Manager — 08 · Vendor & Partner Management for AI](https://learnmasterypath.com/ai-manager-mastery-path/level-3/08-vendor-partner-management/)
+- [Cybersecurity — 09 · Security Leadership & Risk Management](https://learnmasterypath.com/cybersecurity-mastery-path/level-4/09-security-leadership-risk-management/)
 
 ## Exercise
 

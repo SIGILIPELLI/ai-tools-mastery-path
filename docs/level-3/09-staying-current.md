@@ -104,7 +104,7 @@ diagram.
 
 ## 🔀 Related lessons on other tracks
 
-- [Claude Training — 06 · Staying Current as AI Capabilities Evolve](https://sigilipelli.github.io/claude-training-mastery-path/level-4/06-staying-current-ai-capabilities/)
+- [Claude Training — 06 · Staying Current as AI Capabilities Evolve](https://learnmasterypath.com/claude-training-mastery-path/level-4/06-staying-current-ai-capabilities/)
 
 ## Exercise
 
