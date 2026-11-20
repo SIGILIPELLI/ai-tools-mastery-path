@@ -1,3 +1,7 @@
+---
+description: "Level 2 (Intermediate) of the free AI Tools Mastery Path: Comparing AI Tools Systematically, Combining Multiple AI Tools in a Workflow, AI-Assisted Research…"
+---
+
 # Level 2 · Intermediate
 
 ## Modules

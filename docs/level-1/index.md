@@ -1,3 +1,7 @@
+---
+description: "Level 1 (Entry) of the free AI Tools Mastery Path. Build a working map of the AI tools landscape, learn a repeatable way to pick the right tool for a task…"
+---
+
 # Level 1 · Entry <span class="level-badge">Foundations</span>
 
 Goal: build a working map of the AI tools landscape, learn a repeatable way

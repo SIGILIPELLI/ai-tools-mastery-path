@@ -1,6 +1,6 @@
 ---
 title: "Learn AI Tools Free: Beginner to Master Course"
-description: "Free course on evaluating and using AI tools effectively -- decision frameworks, workflows, and a governance capstone. Part of a 41-course free learning library."
+description: "Free course on evaluating and using AI tools effectively -- decision frameworks, workflows, and a governance capstone. Part of a 100+ course free learning library."
 ---
 
 # AI Tools Mastery Path

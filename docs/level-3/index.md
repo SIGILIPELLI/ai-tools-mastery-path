@@ -1,3 +1,7 @@
+---
+description: "Level 3 (Advanced) of the free AI Tools Mastery Path: AI Tool Adoption for Teams, Building Internal AI Tool Guidelines, Evaluating AI Vendors, Integrating…"
+---
+
 # Level 3 · Advanced
 
 ## Modules

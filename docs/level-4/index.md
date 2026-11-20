@@ -1,3 +1,7 @@
+---
+description: "Level 4 (Master) of the free AI Tools Mastery Path: Organizational AI Strategy, Building an AI Tools Governance Committee, Advanced Vendor Risk Management…"
+---
+
 # Level 4 · Master
 
 ## Modules
