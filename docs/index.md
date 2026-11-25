@@ -36,8 +36,7 @@ yourself, see [AI/ML Mastery Path](https://learnmasterypath.com/ai-ml-mastery-pa
   table), plus a worked scenario showing it applied to a real decision.
 - Each topic ends with an **Exercise** — a practical deliverable using your
   own workflow, team, or organization as the subject.
-- Each level ends with a project that combines everything learned in that
-  level into a real artifact: a personal toolkit, a workflow design, an
+- Levels 1–3 each end with a project that combines everything learned in that level into a real artifact: a personal toolkit, a workflow design, an
   adoption proposal, or a full organizational strategy.
 - Use the search bar (top of the page) to jump straight to a topic.
 
